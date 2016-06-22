@@ -1,7 +1,10 @@
 .video__controls{
   z-index: 10;
   position: absolute;
-  top:200px;
+  top:70%;
+  left:42%;
+  height:20px;
+  width:200px;
 }
 
 .video__controls--button{
@@ -10,6 +13,12 @@
   border: none;
   background-color: $navy;
   color: $white;
+  cursor: pointer;
+  &:hover{
+    background-color: $navy-dark;
+    transition: 0.2s;
+    border: 1px solid $white;
+  }
 }
 
 .video__controls--play{

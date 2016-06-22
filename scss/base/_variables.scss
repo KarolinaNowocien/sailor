@@ -2,13 +2,16 @@ $grey: #4d4d4d;
 $white: #f5f6fa;
 $black: #000;
 $navy: #11294b;
+$navy-dark: #09182d;
+$blue: #045dcd;
 
 
-.landing__video {
+.landing__page--opacity {
     z-index: 3;
-    background: #000365;
-    background: -webkit-linear-gradient(#000365, #006ffc);
-    background: -o-linear-gradient(#000365, #006ffc);
-    background: -moz-linear-gradient(#000365, #006ffc);
-    background: linear-gradient(#000365, #006ffc);
+    background-color: #000365;
+    background-image: -webkit-linear-gradient(#000365, #006ffc);
+    background-image: -o-linear-gradient(#000365, #006ffc);
+    background-image: -moz-linear-gradient(#000365, #006ffc);
+    background-image: linear-gradient(#000365, #006ffc);
+    opacity: 0.2;
 }

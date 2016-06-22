@@ -1,81 +1,32 @@
-/*-- nav styling --*/
-
-.landing__nav {
-  position: absolute;
-  z-index: 100;
-  width: 100%;
-  background-color: transparent;;
-  padding: 1em 2em;
-  font-family: 'montserrat', arial, sans-serif;
-  text-transform: capitalize;;
+main{
   text-align: center;
 }
 
-.landing__nav--sub {
-  text-decoration: none;
-  list-style: none;
-  color: $grey;
-  border-radius: 3px;
-}
-
-.landing__nav--logo {
-  color: $grey;
-  font-size: 2em;
-  float: left;
-  height: 64px;
-  position: relative;
-  color: white;
-}
-
-.nav__wrapper--link {
-  font-size: 16px;
-  float: left;
-  padding: 0.5em;
-  width: 6em;
-  color: white;
-}
-
-.nav__wrapper--link:last-of-type {
-  border: solid 1px white;
-  font-size: 14px;
-}
-
-.nav__wrapper--link:hover {
-  background-color: $white;
-}
-
-.nav__wrapper {
-  float: right;
-  transition: all 350ms ease-out;
-}
-
-#menu__toggle--open {
-  color: $grey;
-  float: right;
-  border: 2px solid $white;
-  padding: .5em 1em;
-  border-radius: 3px;
-  display: none;
-}
-
-#menu__toggle:hover {
-  background-color: $white;
-}
-
-#menu__toggle--close {
-  color: $grey;
-  text-align: right;
+.landing__page{
+  text-align:center;
+  height: 100%;
   width: 100%;
-  display: none;
-  font-size: 1.5rem;
-  margin-bottom: .5em;
+}
+.landing__title{
+  font-size: 72px;
+  position: absolute;
+  z-index: 4;
+  margin: 180px 400px;
+  color: $white;
+}
+
+.landing__subtitle{
+  font-size: 28px;
+  position: absolute;
+  z-index: 4;
+  margin: 300px 400px;
+  color: $white;
 }
 
 .landing__video {
   background-size: cover;
-  background-position: 50% 50%;
   z-index: 0;
-  position: absolute;
+  position: relative;
   width: 100%;
   top: 0;
   left: 0;
@@ -85,32 +36,120 @@
   content: "";
   display: block;
   width: 100%;
-  background-color: rgba(0, 0, 0, .25);
+}
+
+.about{
+  text-align: center;
+}
+.about__title{
+  padding: 20px;
+}
+
+.about__subtitle{
+  padding-bottom: 20px;
+}
+
+.about__skills--type1{
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.about__skills--type2{
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.about__column--type1{
+  display: inline-block;
+  vertical-align: top;
+ 	width: 33%;
+ 	text-align: center;
+}
+
+.about__column--type2{
+  display: inline-block;
+  vertical-align: top;
+ 	width: 45%;
+ 	text-align: center;
+}
+
+.skills__icon{
+  margin-bottom: 20px;
+}
+
+.skills__title{
+  width: 100%;
+  line-height: 1.6;
+}
+
+.skills__description{
+  width: 90%;
+  line-height: 1.6;
+}
+
+.team{
+  text-align: center;
+}
+.team__title{
+  padding: 20px;
+}
+
+.team__subtitle{
+  padding-bottom: 20px;
+}
+
+.team__all{
+  width: 90%;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.team__member{
+  display: inline-block;
+  vertical-align: top;
+ 	width: 25%;
+ 	text-align: center;
+}
+
+.team__member--image{
+  width: 100%;
+}
+
+.pricing{
+  text-align: center;
+  background-color: $blue;
+  height: 400px;
+}
+.pricing__title{
+  color: $white;
+  padding: 20px;
+}
+
+.pricing__subtitle{
+  color: $white;
+  padding-bottom: 20px;
 }
 
 .pricing__wrapper {
-  z-index: 2;
+  z-index: 5;
   max-width: 960px;
   margin: 0 auto;
   position: relative;
-  padding-top: 20em;
+  padding-top: 3em;
+}
+.pricing__wrapper--column{
+  width: 25%;
+  display: inline-block;
 }
 
 .wrapper__header {
-  font-family: 'montserrat', arial, sans-serif;
-  font-size: 1em;
-  font-weight: normal;
-  text-transform: uppercase;
-  color: $white;
-  border-bottom: 2px solid $white;
-  padding-bottom: .5em;
-  margin-bottom: 1em;
 }
 
 .wrapper__inner {
-  width: 100%;
+  display: inline-block;
+  width: 102%;
   height: 30em;
-  background-color: $white;
+  background-color: white;
 }
 
 /*-- media queries --*/
@@ -121,7 +160,7 @@
     display: block;
     float: right;
   }
-  #menu__toggle-close {
+  #menu__toggle--close {
     position: fixed;
     display: block;
   }

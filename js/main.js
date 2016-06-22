@@ -27,12 +27,12 @@ $(document).ready(function() {
    var playpause = document.getElementById("playpause");
    if (video.paused || video.ended) {
       playpause.title = "pause video";
-      playpause.innerHTML = "pause video";
+      playpause.innerHTML = "Pause video";
       video.play();
    }
    else {
-      playpause.title = "watch video";
-      playpause.innerHTML = "watch video";
+      playpause.title = "continue watching";
+      playpause.innerHTML = "Continue watching";
       video.pause();
    }
 }
