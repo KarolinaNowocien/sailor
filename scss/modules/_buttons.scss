@@ -1,0 +1,22 @@
+.video__controls{
+  z-index: 10;
+  position: absolute;
+  top:200px;
+}
+
+.video__controls--button{
+  padding: 14px;
+  border-radius: 50px;
+  border: none;
+  background-color: $navy;
+  color: $white;
+}
+
+.video__controls--play{
+  padding-right: 14px;
+}
+
+/*
+.video__controls--button::before {
+    content: url('img/icons/play_icon.svg');
+}  */

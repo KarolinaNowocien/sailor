@@ -3,13 +3,13 @@ $(document).ready(function() {
 
   $('.nav__wrapper').css('right', '-30em');
 
-  $('#menu-toggle-open').click(function() {
+  $('#menu__toggle--open').click(function() {
 
     $('.nav__wrapper').css('right', '0');
 
   });
 
-  $('#menu-toggle-close').click(function() {
+  $('#menu__toggle--close').click(function() {
 
     $('.nav__wrapper').css('right', '-35em');
 
