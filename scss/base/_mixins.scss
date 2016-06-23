@@ -1,12 +1,32 @@
+@font-face{
+font-family: "Gotham-Bold";
+src: url('../fonts/Gotham-Bold.otf') format('opentype');
+};
+
+@font-face{
+font-family: "Gotham-Book";
+src: url('../fonts/Gotham-Book.otf') format('opentype');
+};
+
+@font-face{
+font-family: "Gotham-Black";
+src: url('../fonts/Gotham-Black.otf') format('opentype');
+};
+
 @mixin border-radius($radius){
 	-webkit-border-radius:$radius;
 	-moz-border-radius:$radius;
 	border-radius:$radius;
-}
+};
 
-@mixin  transition ($transition){
-	-webkit-transition:$transition;
-	-ms-transition:$transition;
-	-o-transition:$transition;
-	-moz-transition:$transition;
-	}
+@mixin respond-to($media) {
+  @if $media == handhelds {
+    @media only screen and (max-width: 320px) { @content; }
+  }
+  @else if $media == medium-screens {
+    @media only screen and (min-width: 321px) and (max-width: 1024px) { @content; }
+  }
+  @else if $media == wide-screens {
+    @media only screen and (min-width: 1024px) { @content; }
+  }
+};

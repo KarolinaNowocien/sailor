@@ -4,14 +4,23 @@ $black: #000;
 $navy: #11294b;
 $navy-dark: #09182d;
 $blue: #045dcd;
+$blue-light: #54a0fe;
+$body: #333333;
+$description: #8f8f8f;
+$yellow: #f5a623;
 
 
 .landing__page--opacity {
+    top:0;
+    left:0;
+    height: 120vh;
+    width: 100%;
+    position: absolute;
     z-index: 3;
     background-color: #000365;
     background-image: -webkit-linear-gradient(#000365, #006ffc);
     background-image: -o-linear-gradient(#000365, #006ffc);
     background-image: -moz-linear-gradient(#000365, #006ffc);
     background-image: linear-gradient(#000365, #006ffc);
-    opacity: 0.2;
+    opacity: 0.8;
 }

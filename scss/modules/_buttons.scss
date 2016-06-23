@@ -1,14 +1,17 @@
 .video__controls{
   z-index: 10;
   position: absolute;
-  top:70%;
-  left:42%;
-  height:20px;
-  width:200px;
+  top:22vw;
+  margin:0 auto;
+  width:31vh;
 }
 
 .video__controls--button{
-  padding: 14px;
+  font-family: "Gotham-Bold";
+  text-transform: uppercase;
+  font-size: 2.2vh;
+  letter-spacing: 0.4vh;
+  padding: 2vh;
   border-radius: 50px;
   border: none;
   background-color: $navy;

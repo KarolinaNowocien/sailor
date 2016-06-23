@@ -1,0 +1,15 @@
+.landing__page--opacity {
+  top: 0;
+  left: 0;
+  height: 120vh;
+  width: 100%;
+  position: absolute;
+  z-index: 3;
+  background-color: #000365;
+  background-image: -webkit-linear-gradient(#000365, #006ffc);
+  background-image: -o-linear-gradient(#000365, #006ffc);
+  background-image: -moz-linear-gradient(#000365, #006ffc);
+  background-image: linear-gradient(#000365, #006ffc);
+  opacity: 0.8; }
+
+/*# sourceMappingURL=_variables.css.map */

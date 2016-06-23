@@ -3,43 +3,51 @@
   z-index: 100;
   width: 100%;
   background-color: transparent;;
-  padding: 1em 2em;
-  font-family: 'montserrat', arial, sans-serif;
-  text-transform: capitalize;;
+  padding: 2em 1em;
+  text-transform: capitalize;
   text-align: center;
 }
 
-.landing__nav--sub {
+.landing__nav--link {
   text-decoration: none;
   list-style: none;
-  color: $grey;
-  border-radius: 3px;
 }
 
 .landing__nav--logo {
+  font-family: "Gotham-Black";
   color: $grey;
-  font-size: 2em;
+  font-size: 7vh;
   float: left;
+  left: 3vw;
   height: 64px;
   position: relative;
   color: white;
 }
 
 .nav__wrapper--link {
+  margin-top: 3vh;
+  margin-right: 1.5vw;
+  font-family: "Gotham-Book";
+  font-weight: 600;
   font-size: 16px;
   float: left;
-  padding: 0.5em;
-  width: 6em;
+  padding: 1.5vh 2.5vh;
   color: white;
+  &:hover{
+    border-bottom: $white solid 1px;
+    border-radius: 0;
+  }
 }
 
 .nav__wrapper--link:last-of-type {
+  width: 6.5em;
   border: solid 1px white;
   font-size: 14px;
-}
-
-.nav__wrapper--link:hover {
-  background-color: $white;
+  border-radius: 20px;
+  &:hover{
+    border: $yellow solid 1px;
+    color:$yellow;
+  }
 }
 
 .nav__wrapper {
@@ -51,7 +59,7 @@
   color: $grey;
   float: right;
   border: 2px solid $white;
-  padding: .5em 1em;
+  padding: 1em 1em;
   border-radius: 3px;
   display: none;
 }

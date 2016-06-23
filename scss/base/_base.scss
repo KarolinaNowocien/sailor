@@ -2,12 +2,21 @@ main{
   text-align: center;
 }
 
+.main__divider{
+  background-color: $blue-light;
+  height: 0.8vh;
+  width: 25vh;
+  margin: 8vh auto;
+}
+
 .landing__page{
   text-align:center;
   height: 100%;
   width: 100%;
+  overflow: hidden;
 }
 .landing__title{
+  font-family: "Gotham-Book";
   font-size: 72px;
   position: absolute;
   z-index: 4;
@@ -16,6 +25,7 @@ main{
 }
 
 .landing__subtitle{
+  font-family: "Gotham-Book";
   font-size: 28px;
   position: absolute;
   z-index: 4;
@@ -24,12 +34,14 @@ main{
 }
 
 .landing__video {
-  background-size: cover;
+  top:0;
+  @include respond-to(handhelds) { height: 80vh ;}
+  @include respond-to(medium-screens) { height: 120vh ; }
+  @include respond-to(wide-screens) { height: 120vh ; }
   z-index: 0;
   position: relative;
-  width: 100%;
-  top: 0;
-  left: 0;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .landing__video:after {
@@ -40,37 +52,50 @@ main{
 
 .about{
   text-align: center;
+  color:$body;
 }
 .about__title{
-  padding: 20px;
+  font-family: "Gotham-Bold";
+  font-size: 64px;
 }
 
 .about__subtitle{
+  font-family: "Gotham-Book";
+  opacity:.45;
+  font-size: 24px;
   padding-bottom: 20px;
 }
 
 .about__skills--type1{
-  width: 100%;
-  margin-bottom: 60px;
+  width: 75%;
+  margin:0 auto;
 }
 
 .about__skills--type2{
-  width: 100%;
-  margin-bottom: 60px;
+  width: 75%;
+  margin:0 auto;
 }
 
 .about__column--type1{
   display: inline-block;
   vertical-align: top;
- 	width: 33%;
  	text-align: center;
+  padding: 7px 7px;
+  margin:20px 0;
+  @include respond-to(handhelds) { width: 100% ;}
+  @include respond-to(medium-screens) { width: 100% ; }
+  @include respond-to(wide-screens) { width: 33% ; }
 }
 
 .about__column--type2{
   display: inline-block;
   vertical-align: top;
- 	width: 45%;
  	text-align: center;
+  padding: 7px 7px;
+  margin:20px 20px;
+  @include respond-to(handhelds) { width: 100% ;}
+  @include respond-to(medium-screens) { width: 100% ; }
+  @include respond-to(wide-screens) { width: 33% ; }
 }
 
 .skills__icon{
@@ -78,13 +103,19 @@ main{
 }
 
 .skills__title{
+  font-family: "Gotham-Book";
+  color:$body;
+  font-size: 36px;
   width: 100%;
-  line-height: 1.6;
+  line-height: 1.2;
 }
 
 .skills__description{
-  width: 90%;
-  line-height: 1.6;
+  font-family: "Gotham-Book";
+  width: 100%;
+  margin: 10px;
+  line-height: 1.13;
+  color: $description;
 }
 
 .team{
@@ -153,8 +184,23 @@ main{
 }
 
 /*-- media queries --*/
+@media screen and (min-width: 1200px) {
+  .landing__video{
+    width: 100%;
+    top:0;
+    left:0;
+  }
+
+}
 
 @media screen and (max-width: 800px) {
+
+  .landing__video{
+    height: 150vh;
+    top:0;
+    background-position: center;
+  }
+
   #menu__toggle--open {
     position: fixed;
     display: block;

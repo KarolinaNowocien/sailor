@@ -7,7 +7,7 @@
   <meta name="Keywords" content="Sailor, sailing, pawel solyga, konrad kolasa, " />
   <!--css-->
 	<link href="css/normalize.css" rel="stylesheet">
-	<link href="css/main.css" rel="stylesheet">
+	<link href="css2/main.css" rel="stylesheet">
 </head>
 
 <body>
@@ -16,31 +16,31 @@
 
     <nav class="landing__nav">
 
-      <a class="landing__nav--sub" href="#">
+      <a class="landing__nav--link" href="#">
         <div class="landing__nav--logo" id="logo">Sailor.</div>
       </a>
 
-      <a class="landing__nav--sub" href="#" id="menu__toggle--open">Menu ≡</a>
+      <a class="landing__nav--link" href="#" id="menu__toggle--open">Menu ≡</a>
 
       <div class="nav__wrapper">
         <ul>
-          <a class="landing__nav--sub nav__wrapper--link" href="#" id="menu__toggle--close">✖</a>
-          <a class="landing__nav--sub nav__wrapper--link" href="#">
+          <a class="landing__nav--link nav__wrapper--link" href="#" id="menu__toggle--close">✖</a>
+          <a class="landing__nav--link nav__wrapper--link" href="#">
             <li>About</li>
           </a>
-          <a class="landing__nav--sub nav__wrapper--link" href="#">
+          <a class="landing__nav--link nav__wrapper--link" href="#">
             <li>Team</li>
           </a>
-          <a class="landing__nav--sub nav__wrapper--link" href="#">
+          <a class="landing__nav--link nav__wrapper--link" href="#">
             <li>Pricing</li>
           </a>
-          <a class="landing__nav--sub nav__wrapper--link" href="#">
+          <a class="landing__nav--link nav__wrapper--link" href="#">
             <li>Careers</li>
           </a>
-          <a class="landing__nav--sub nav__wrapper--link" href="#">
+          <a class="landing__nav--link nav__wrapper--link" href="#">
             <li>Blog</li>
           </a>
-          <a class="landing__nav--sub nav__wrapper--link" href="#">
+          <a class="landing__nav--link nav__wrapper--link" href="#">
             <li>Purchase</li>
           </a>
         </ul>
@@ -52,11 +52,16 @@
     <section class="landing__page">
 			<h1 class="landing__title">This is Sailor</h1>
 			<h5 class="landing__subtitle">Responsive. Retina Ready. SVG friendly</h5>
+			<div class="landing__page--opacity"></div>
       <video id="video" class="landing__video" controls>
 			  <source src="video/mp4/Sail-Away.mp4" type="video/mp4">
 			  <source src="video/OGV/Sail-Away.ogv" type="video/ogv">
 			  Your browser does not support HTML5 video.
 			</video>
+		<!--	Volume/Mute - not sure if needed
+		<input id="volume" min="0" max="1" step="0.1" type="range" onchange="setVolume()" />
+			<button id="mute" onclick="toggleMute()">Mute</button>
+		-->
 			<div class="video__controls" id="controls">
 			   <button class="video__controls--button" id="playpause" title="play" onclick="togglePlayPause()"><img class="video__controls--play" src="img/icons/play_icon.svg"><span>Watch Video</span></button>
 			</div>
@@ -65,6 +70,7 @@
 <section id="about" class="about">
 	<h1 class="about__title">About Sailor</h1>
 	<h5 class="about__subtitle">Sailor is designed to make your business highly effective</h5>
+	<hr class="main__divider">
 	<div class="about__skills--type1">
 		<div class="about__column--type1">
 			<img class="skills__icon" src="img/icons/perk_icon_1.svg">
@@ -94,6 +100,7 @@
 			<p class="skills__description">We use Sketch as a simplest way to have fully-editable vectors<p>
 		</div>
 	</div>
+	<hr class="main__divider">
 </section>
 
 <section id="team" class="team">
@@ -145,12 +152,6 @@
 
 <footer id="contact" class="contact">
 </footer>
-<!--
-
-
-	-->
-
-
 
   </main>
 

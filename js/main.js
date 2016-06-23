@@ -36,3 +36,14 @@ $(document).ready(function() {
       video.pause();
    }
 }
+/* Volume/Mute - not sure if needed
+
+function setVolume() {
+   var volume = document.getElementById("volume");
+   video.volume = volume.value;
+}
+
+function toggleMute() {
+   video.muted = !video.muted;
+}
+*/
