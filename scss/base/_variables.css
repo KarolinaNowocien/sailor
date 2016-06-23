@@ -1,4 +1,4 @@
-.landing__page--opacity {
+.landing__bg--opacity {
   top: 0;
   left: 0;
   height: 120vh;
@@ -10,6 +10,7 @@
   background-image: -o-linear-gradient(#000365, #006ffc);
   background-image: -moz-linear-gradient(#000365, #006ffc);
   background-image: linear-gradient(#000365, #006ffc);
-  opacity: 0.8; }
+  opacity: 0.8;
+}
 
 /*# sourceMappingURL=_variables.css.map */

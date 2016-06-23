@@ -9,27 +9,37 @@ main{
   margin: 8vh auto;
 }
 
-.landing__page{
+.landing__bg{
   text-align:center;
   height: 100%;
   width: 100%;
   overflow: hidden;
 }
 .landing__title{
+  @include respond-to(handhelds) { margin: 39vh 17vw ;}
+  @include respond-to(medium-screens) { margin: 39vh 17vw ; }
+  @include respond-to(wide-screens) { margin: 39vh 31vw ; }
+  @include respond-to(handhelds) { font-size: 100px ;}
+  @include respond-to(medium-screens) { font-size: 100px ; }
+  @include respond-to(wide-screens) { font-size: 72px ; }
   font-family: "Gotham-Book";
-  font-size: 72px;
+  font-weight: 100;
   position: absolute;
   z-index: 4;
-  margin: 180px 400px;
   color: $white;
 }
 
 .landing__subtitle{
+  @include respond-to(handhelds) { margin: 48vh 8vw ;}
+  @include respond-to(medium-screens) { margin: 48vh 8vw ; }
+  @include respond-to(wide-screens) { margin: 55vh 27vw ; }
+  @include respond-to(handhelds) { font-size: 42px ;}
+  @include respond-to(medium-screens) { font-size: 42px ; }
+  @include respond-to(wide-screens) { font-size: 28px ; }
   font-family: "Gotham-Book";
-  font-size: 28px;
+  font-weight: 100;
   position: absolute;
   z-index: 4;
-  margin: 300px 400px;
   color: $white;
 }
 

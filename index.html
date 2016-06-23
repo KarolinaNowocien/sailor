@@ -24,14 +24,14 @@
 
       <div class="nav__wrapper">
         <ul>
-          <a class="landing__nav--link nav__wrapper--link" href="#" id="menu__toggle--close">✖</a>
-          <a class="landing__nav--link nav__wrapper--link" href="#">
+          <a class="landing__nav--link nav__wrapper--link" href="#home" id="menu__toggle--close">✖</a>
+          <a class="landing__nav--link nav__wrapper--link" href="#about">
             <li>About</li>
           </a>
-          <a class="landing__nav--link nav__wrapper--link" href="#">
+          <a class="landing__nav--link nav__wrapper--link" href="#team">
             <li>Team</li>
           </a>
-          <a class="landing__nav--link nav__wrapper--link" href="#">
+          <a class="landing__nav--link nav__wrapper--link" href="#pricing">
             <li>Pricing</li>
           </a>
           <a class="landing__nav--link nav__wrapper--link" href="#">
@@ -49,10 +49,10 @@
     </nav>
 
 
-    <section class="landing__page">
-			<h1 class="landing__title">This is Sailor</h1>
+    <section id="home" class="landing__bg">
+			<h1 class="landing__title">This is Sailor.</h1>
 			<h5 class="landing__subtitle">Responsive. Retina Ready. SVG friendly</h5>
-			<div class="landing__page--opacity"></div>
+			<div class="landing__bg--opacity"></div>
       <video id="video" class="landing__video" controls>
 			  <source src="video/mp4/Sail-Away.mp4" type="video/mp4">
 			  <source src="video/OGV/Sail-Away.ogv" type="video/ogv">
@@ -64,6 +64,9 @@
 		-->
 			<div class="video__controls" id="controls">
 			   <button class="video__controls--button" id="playpause" title="play" onclick="togglePlayPause()"><img class="video__controls--play" src="img/icons/play_icon.svg"><span>Watch Video</span></button>
+			</div>
+			<div class="landing__bg--button">
+			  <button id="button__scrolly"><img class="landing__bg--scroll" src="img/icons/scroll_icon.svg"></button>
 			</div>
     </section>
 

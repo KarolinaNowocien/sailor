@@ -47,3 +47,9 @@ function toggleMute() {
    video.muted = !video.muted;
 }
 */
+
+$("#button__scrolly").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#about").offset().top
+    }, 1000, 'swing');
+});
