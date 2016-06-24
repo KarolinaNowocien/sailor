@@ -45,6 +45,7 @@ ul li {
 
 main {
   text-align: center;
+  overflow: hidden;
 }
 
 .main__divider {
@@ -205,7 +206,6 @@ main {
   vertical-align: top;
   text-align: center;
   padding: 45px;
-  margin: 25px 0;
 }
 @media only screen and (max-width: 320px) {
   .about__column--type1 {
@@ -228,7 +228,6 @@ main {
   vertical-align: top;
   text-align: center;
   padding: 45px;
-  margin: 25px 25px;
 }
 @media only screen and (max-width: 320px) {
   .about__column--type2 {
@@ -363,9 +362,7 @@ main {
 }
 
 .team__all {
-  width: 90%;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin: 0;
 }
 
 .team__member {
@@ -375,8 +372,20 @@ main {
   text-align: center;
 }
 
-.team__member--image {
-  width: 100px;
+@media only screen and (max-width: 320px) {
+  .item {
+    width: 340px;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 1024px) {
+  .item {
+    width: 340px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .item {
+    width: 400px;
+  }
 }
 
 .pricing {

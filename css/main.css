@@ -5,7 +5,7 @@
 body,html{width:100%;height:100%;position:relative}
 *{margin:0;padding:0;box-sizing:border-box;text-align:center}
 ul li{list-style:none}
-main{text-align:center}
+main{text-align:center;overflow:hidden}
 .main__divider{background-color:#54a0fe;height:.8vh;width:25vh;margin:8vh auto}
 .landing__bg{text-align:center;height:100%;width:100%;overflow:hidden}
 .landing__title{font-family:Gotham-Book;font-weight:100;position:absolute;z-index:4;color:#f5f6fa}
@@ -31,11 +31,10 @@ main{text-align:center}
 @media only screen and (min-width:321px) and (max-width:1024px){.about__subtitle{font-size:36px}}
 @media only screen and (min-width:1024px){.about__subtitle{font-size:24px}}
 .about__skills--type1,.about__skills--type2{width:100%;margin:0 auto;font-weight:100}
-.about__column--type1{display:inline-block;vertical-align:top;text-align:center;padding:45px;margin:25px 0}
+.about__column--type1,.about__column--type2{display:inline-block;vertical-align:top;text-align:center;padding:45px}
 @media only screen and (max-width:320px){.about__column--type1{width:100%}}
 @media only screen and (min-width:321px) and (max-width:1024px){.about__column--type1{width:100%}}
 @media only screen and (min-width:1024px){.about__column--type1{width:33%}}
-.about__column--type2{display:inline-block;vertical-align:top;text-align:center;padding:45px;margin:25px}
 @media only screen and (max-width:320px){.about__column--type2{width:100%}}
 @media only screen and (min-width:321px) and (max-width:1024px){.about__column--type2{width:100%}}
 @media only screen and (min-width:1024px){.about__column--type2{width:33%}}
@@ -61,9 +60,11 @@ main{text-align:center}
 @media only screen and (max-width:320px){.team__subtitle{font-size:36px}}
 @media only screen and (min-width:321px) and (max-width:1024px){.team__subtitle{font-size:36px}}
 @media only screen and (min-width:1024px){.team__subtitle{font-size:24px}}
-.team__all{width:90%;margin-left:50px;margin-right:50px}
+.team__all{margin:0}
 .team__member{display:inline-block;vertical-align:top;width:25%;text-align:center}
-.team__member--image{width:100px}
+@media only screen and (max-width:320px){.item{width:340px}}
+@media only screen and (min-width:321px) and (max-width:1024px){.item{width:340px}}
+@media only screen and (min-width:1024px){.item{width:400px}}
 .pricing{text-align:center;background-color:#045dcd;height:400px}
 .pricing__title{color:#f5f6fa;padding:20px}
 .pricing__subtitle{color:#f5f6fa;padding-bottom:20px}

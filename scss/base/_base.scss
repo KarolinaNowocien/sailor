@@ -1,5 +1,6 @@
 main{
   text-align: center;
+  overflow: hidden;
 }
 
 .main__divider{
@@ -92,7 +93,7 @@ main{
   vertical-align: top;
  	text-align: center;
   padding: 45px;
-  margin:25px 0;
+
   @include respond-to(handhelds) { width: 100% ;}
   @include respond-to(medium-screens) { width: 100% ; }
   @include respond-to(wide-screens) { width: 33% ; }
@@ -103,7 +104,7 @@ main{
   vertical-align: top;
  	text-align: center;
   padding: 45px;
-  margin:25px 25px;
+
   @include respond-to(handhelds) { width: 100% ;}
   @include respond-to(medium-screens) { width: 100% ; }
   @include respond-to(wide-screens) { width: 33% ; }
@@ -165,9 +166,7 @@ main{
 }
 
 .team__all{
-  width: 90%;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin:0;
 }
 
 .team__member{
@@ -177,8 +176,10 @@ main{
  	text-align: center;
 }
 
-.team__member--image{
-  width: 100px;
+.item{
+  @include respond-to(handhelds) { width: 340px;}
+  @include respond-to(medium-screens) { width: 340px;}
+  @include respond-to(wide-screens) { width: 400px; }
 }
 
 .pricing{
