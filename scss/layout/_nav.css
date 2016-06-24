@@ -11,8 +11,8 @@ Error: Undefined variable: "$white".
 16: }
 17: 
 18: .landing__nav--logo {
-19:   z-index: 10;
-20:   font-family: "Gotham-Black";
+19:   margin-top:1.7vh;
+20:   margin-left: 3vw;
 
 Backtrace:
 C:\Users\Karolina\Desktop\sailor\scss\layout\_nav.scss:15
@@ -62,4 +62,4 @@ C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$white\".\A         on line 15 of C:\Users\Karolina\Desktop\sailor\scss\layout\_nav.scss\A \A 10: }\A 11: \A 12: .landing__nav--link {\A 13:   text-decoration: none;\A 14:   list-style: none;\A 15:   color: $white;\A 16: }\A 17: \A 18: .landing__nav--logo {\A 19:   z-index: 10;\A 20:   font-family: \"Gotham-Black\";"; }
+  content: "Error: Undefined variable: \"$white\".\A         on line 15 of C:\Users\Karolina\Desktop\sailor\scss\layout\_nav.scss\A \A 10: }\A 11: \A 12: .landing__nav--link {\A 13:   text-decoration: none;\A 14:   list-style: none;\A 15:   color: $white;\A 16: }\A 17: \A 18: .landing__nav--logo {\A 19:   margin-top:1.7vh;\A 20:   margin-left: 3vw;"; }

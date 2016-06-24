@@ -32,7 +32,9 @@
 }
 
 .video__controls--play{
-  padding-right: 14px;
+  @include respond-to(handhelds) { height:2.5vh; padding-right: 14px;}
+  @include respond-to(medium-screens) { height:2.5vh; padding-right: 14px;}
+  @include respond-to(wide-screens) { padding-right: 14px; }
 }
 
 /*
@@ -43,7 +45,7 @@
 #button__scrolly{
   @include respond-to(handhelds) { left:44vw;}
   @include respond-to(medium-screens) { left:44vw; }
-  @include respond-to(wide-screens) { left:47vw; }
+  @include respond-to(wide-screens) { left:47.5vw; }
   cursor: pointer;
   z-index: 10;
   top:100vh;

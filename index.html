@@ -8,6 +8,9 @@
   <!--css-->
 	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/assets/owl.carousel.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/assets/owl.theme.default.min.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -115,22 +118,16 @@
 <section id="team" class="team">
 	<h1 class="team__title">Executive Team</h1>
 	<h5 class="team__subtitle">People are the most powerful and vaulable part of every project</h5>
-	<div class="team__all">
-		<div class="team__member team__member--active">
-			<img class="team__member--image" src="img/armchair1.png">
-			<h3 class="team__member--name">Paweł Sołyga</h3>
-			<p class="team__member--role">Founder</p>
-		</div>
-		<div class="team__member team__member--active">
-			<img class="team__member--image" src="img/armchair2.png">
+	<div id="owl-demo" class="owl-carousel">
+	  <div class="item">	<img class="team__member--image" src="img/armchair2.png">
 			<h3 class="team__member--name">Konrad Kolasa</h3>
-			<p class="team__member--role">Product Designer</p>
-		</div>
-		<div class="team__member team__member--active">
-			<img class="team__member--image" src="img/armchair3.png">
+			<p class="team__member--role">Product Designer</p></div>
+	  <div class="item">	<img class="team__member--image" src="img/armchair3.png">
 			<h3 class="team__member--name">Leon</h3>
-			<p class="team__member--role">Mentor</p>
-		</div>
+			<p class="team__member--role">Mentor</p></div>
+	  <div class="item">	<img class="team__member--image" src="img/armchair1.png">
+			<h3 class="team__member--name">Paweł Sołyga</h3>
+			<p class="team__member--role">Founder</p></div>
 	</div>
 </section>
 
@@ -165,6 +162,8 @@
   </main>
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/owl.carousel.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,7 +1,8 @@
 $(document).ready(function(){
   $(".ico").click(function(){
     $("#ico1").toggleClass("act");
-    $("#ico3").toggleClass("act2");
+    $("#ico2").toggleClass("act2");
+    $("#ico3").toggleClass("act3");
   });
 });
 
@@ -26,7 +27,7 @@ $(document).ready(function(){
    }
    else {
       playpause.title = "continue watching";
-      playpause.innerHTML = "Continue watching";
+      playpause.innerHTML = "Continue";
       video.pause();
    }
 }
@@ -46,4 +47,21 @@ $("#button__scrolly").click(function() {
     $('html, body').animate({
         scrollTop: $("#about").offset().top
     }, 1000, 'swing');
+});
+
+
+///////
+
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel({
+    center: true,
+    items:2,
+    loop:true,
+    margin:0,
+    responsive:{
+        100:{
+          items:3,
+         }
+     }
+  });
 });
