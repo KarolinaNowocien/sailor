@@ -49,6 +49,7 @@ main {
 }
 
 .main__divider {
+  z-index: 15;
   background-color: #54a0fe;
   height: 0.8vh;
   width: 25vh;
@@ -62,54 +63,50 @@ main {
   overflow: hidden;
 }
 
-.landing__title {
+.landing__text {
   font-family: "Gotham-Book";
   font-weight: 100;
   position: absolute;
   z-index: 4;
   color: #f5f6fa;
 }
+
 @media only screen and (max-width: 320px) {
-  .landing__title {
+  .landing__text--title {
     margin: 39vh 17vw;
     font-size: 100px;
   }
 }
 @media only screen and (min-width: 321px) and (max-width: 1024px) {
-  .landing__title {
+  .landing__text--title {
     margin: 39vh 17vw;
     font-size: 100px;
   }
 }
 @media only screen and (min-width: 1024px) {
-  .landing__title {
+  .landing__text--title {
     margin: 39vh 31vw;
     font-size: 72px;
   }
 }
 
-.landing__subtitle {
-  font-family: "Gotham-Book";
-  font-weight: 100;
-  position: absolute;
-  z-index: 4;
-  color: #f5f6fa;
+.landing__text--subtitle {
   opacity: .8;
 }
 @media only screen and (max-width: 320px) {
-  .landing__subtitle {
+  .landing__text--subtitle {
     margin: 48vh 8vw;
     font-size: 42px;
   }
 }
 @media only screen and (min-width: 321px) and (max-width: 1024px) {
-  .landing__subtitle {
+  .landing__text--subtitle {
     margin: 48vh 8vw;
     font-size: 42px;
   }
 }
 @media only screen and (min-width: 1024px) {
-  .landing__subtitle {
+  .landing__text--subtitle {
     margin: 55vh 27vw;
     font-size: 28px;
   }
@@ -333,12 +330,6 @@ main {
   }
 }
 
-.owl-carousel {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-
 .team__subtitle {
   font-family: "Gotham-Book";
   padding-bottom: 20px;
@@ -359,6 +350,12 @@ main {
   .team__subtitle {
     font-size: 24px;
   }
+}
+
+.owl-carousel {
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
 .team__all {
@@ -395,13 +392,47 @@ main {
 }
 
 .pricing__title {
-  color: #f5f6fa;
+  font-family: "Gotham-Book";
   padding: 20px;
+  color: #f5f6fa;
+}
+@media only screen and (max-width: 320px) {
+  .pricing__title {
+    font-size: 90px;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 1024px) {
+  .pricing__title {
+    font-size: 90px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .pricing__title {
+    font-size: 64px;
+  }
 }
 
 .pricing__subtitle {
-  color: #f5f6fa;
+  font-family: "Gotham-Book";
   padding-bottom: 20px;
+  font-weight: 100;
+  opacity: .8;
+  color: #f5f6fa;
+}
+@media only screen and (max-width: 320px) {
+  .pricing__subtitle {
+    font-size: 36px;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 1024px) {
+  .pricing__subtitle {
+    font-size: 36px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .pricing__subtitle {
+    font-size: 24px;
+  }
 }
 
 .pricing__wrapper {
@@ -413,15 +444,40 @@ main {
 }
 
 .pricing__wrapper--column {
-  width: 25%;
+  width: 40%;
   display: inline-block;
 }
 
 .wrapper__inner {
+  z-index: 10;
   display: inline-block;
   width: 102%;
-  height: 30em;
+  height: 500px;
   background-color: white;
+  box-shadow: 10px -10px 10px 10px rgba(68, 68, 68, 0.1);
+}
+
+.wrapper__text {
+  margin-top: 50px;
+  font-family: "Gotham-Book";
+  color: #333333;
+}
+
+.wrapper__text--header {
+  text-transform: uppercase;
+}
+
+.wrapper__text--subtitle {
+  padding: 0 75px;
+  text-transform: capitalize;
+  margin-bottom: 50px;
+  font-size: 16px;
+}
+
+.wrapper__text--price {
+  color: #045dcd;
+  font-size: 40px;
+  font-weight: 100;
 }
 
 .landing__nav {

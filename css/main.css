@@ -6,16 +6,16 @@ body,html{width:100%;height:100%;position:relative}
 *{margin:0;padding:0;box-sizing:border-box;text-align:center}
 ul li{list-style:none}
 main{text-align:center;overflow:hidden}
-.main__divider{background-color:#54a0fe;height:.8vh;width:25vh;margin:8vh auto}
+.main__divider{z-index:15;background-color:#54a0fe;height:.8vh;width:25vh;margin:8vh auto}
 .landing__bg{text-align:center;height:100%;width:100%;overflow:hidden}
-.landing__title{font-family:Gotham-Book;font-weight:100;position:absolute;z-index:4;color:#f5f6fa}
-@media only screen and (max-width:320px){.landing__title{margin:39vh 17vw;font-size:100px}}
-@media only screen and (min-width:321px) and (max-width:1024px){.landing__title{margin:39vh 17vw;font-size:100px}}
-@media only screen and (min-width:1024px){.landing__title{margin:39vh 31vw;font-size:72px}}
-.landing__subtitle{font-family:Gotham-Book;font-weight:100;position:absolute;z-index:4;color:#f5f6fa;opacity:.8}
-@media only screen and (max-width:320px){.landing__subtitle{margin:48vh 8vw;font-size:42px}}
-@media only screen and (min-width:321px) and (max-width:1024px){.landing__subtitle{margin:48vh 8vw;font-size:42px}}
-@media only screen and (min-width:1024px){.landing__subtitle{margin:55vh 27vw;font-size:28px}}
+.landing__text{font-family:Gotham-Book;font-weight:100;position:absolute;z-index:4;color:#f5f6fa}
+@media only screen and (max-width:320px){.landing__text--title{margin:39vh 17vw;font-size:100px}}
+@media only screen and (min-width:321px) and (max-width:1024px){.landing__text--title{margin:39vh 17vw;font-size:100px}}
+@media only screen and (min-width:1024px){.landing__text--title{margin:39vh 31vw;font-size:72px}}
+.landing__text--subtitle{opacity:.8}
+@media only screen and (max-width:320px){.landing__text--subtitle{margin:48vh 8vw;font-size:42px}}
+@media only screen and (min-width:321px) and (max-width:1024px){.landing__text--subtitle{margin:48vh 8vw;font-size:42px}}
+@media only screen and (min-width:1024px){.landing__text--subtitle{margin:55vh 27vw;font-size:28px}}
 .landing__video{top:0;z-index:0;position:relative;background-position:center center;background-repeat:no-repeat}
 @media only screen and (max-width:320px){.landing__video{height:80vh}}
 @media only screen and (min-width:321px) and (max-width:1024px){.landing__video{height:120vh}}
@@ -55,22 +55,32 @@ main{text-align:center;overflow:hidden}
 @media only screen and (max-width:320px){.team__title{font-size:90px}}
 @media only screen and (min-width:321px) and (max-width:1024px){.team__title{font-size:90px}}
 @media only screen and (min-width:1024px){.team__title{font-size:64px}}
-.owl-carousel{margin:0;padding:0;width:100%}
 .team__subtitle{font-family:Gotham-Book;padding-bottom:20px;font-weight:100;opacity:.8}
 @media only screen and (max-width:320px){.team__subtitle{font-size:36px}}
 @media only screen and (min-width:321px) and (max-width:1024px){.team__subtitle{font-size:36px}}
 @media only screen and (min-width:1024px){.team__subtitle{font-size:24px}}
+.owl-carousel{margin:0;padding:0;width:100%}
 .team__all{margin:0}
 .team__member{display:inline-block;vertical-align:top;width:25%;text-align:center}
 @media only screen and (max-width:320px){.item{width:340px}}
 @media only screen and (min-width:321px) and (max-width:1024px){.item{width:340px}}
 @media only screen and (min-width:1024px){.item{width:400px}}
 .pricing{text-align:center;background-color:#045dcd;height:400px}
-.pricing__title{color:#f5f6fa;padding:20px}
-.pricing__subtitle{color:#f5f6fa;padding-bottom:20px}
+.pricing__title{font-family:Gotham-Book;padding:20px;color:#f5f6fa}
+@media only screen and (max-width:320px){.pricing__title{font-size:90px}}
+@media only screen and (min-width:321px) and (max-width:1024px){.pricing__title{font-size:90px}}
+@media only screen and (min-width:1024px){.pricing__title{font-size:64px}}
+.pricing__subtitle{font-family:Gotham-Book;padding-bottom:20px;font-weight:100;opacity:.8;color:#f5f6fa}
+@media only screen and (max-width:320px){.pricing__subtitle{font-size:36px}}
+@media only screen and (min-width:321px) and (max-width:1024px){.pricing__subtitle{font-size:36px}}
+@media only screen and (min-width:1024px){.pricing__subtitle{font-size:24px}}
 .pricing__wrapper{z-index:5;max-width:960px;margin:0 auto;position:relative;padding-top:3em}
-.pricing__wrapper--column{width:25%;display:inline-block}
-.wrapper__inner{display:inline-block;width:102%;height:30em;background-color:#fff}
+.pricing__wrapper--column{width:40%;display:inline-block}
+.wrapper__inner{z-index:10;display:inline-block;width:102%;height:500px;background-color:#fff;box-shadow:10px -10px 10px 10px rgba(68,68,68,.1)}
+.wrapper__text{margin-top:50px;font-family:Gotham-Book;color:#333}
+.wrapper__text--header{text-transform:uppercase}
+.wrapper__text--subtitle{padding:0 75px;text-transform:capitalize;margin-bottom:50px;font-size:16px}
+.wrapper__text--price{color:#045dcd;font-size:40px;font-weight:100}
 .landing__nav{position:absolute;z-index:100;background-color:transparent;padding:2em 1em;text-transform:capitalize;text-align:center;width:95vw}
 .landing__nav--link{text-decoration:none;list-style:none;color:#f5f6fa}
 .landing__nav--logo{margin-top:1.7vh;margin-left:3vw;z-index:10;font-family:Gotham-Bold;float:left;left:3vw;color:#f5f6fa}
