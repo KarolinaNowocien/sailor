@@ -12,4 +12,8 @@ body {
   text-align: center;
 }
 
+ul li {
+  list-style: none;
+}
+
 /*# sourceMappingURL=_reset.css.map */

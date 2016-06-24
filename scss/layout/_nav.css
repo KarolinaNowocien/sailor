@@ -1,21 +1,21 @@
 /*
-Error: Undefined variable: "$grey".
-        on line 18 of C:\Users\Karolina\Desktop\sailor\scss\layout\_nav.scss
+Error: Undefined variable: "$white".
+        on line 15 of C:\Users\Karolina\Desktop\sailor\scss\layout\_nav.scss
 
-13:   list-style: none;
-14: }
-15: 
-16: .landing__nav--logo {
-17:   font-family: "Gotham-Black";
-18:   color: $grey;
-19:   font-size: 7vh;
-20:   float: left;
-21:   left: 3vw;
-22:   height: 64px;
-23:   position: relative;
+10: }
+11: 
+12: .landing__nav--link {
+13:   text-decoration: none;
+14:   list-style: none;
+15:   color: $white;
+16: }
+17: 
+18: .landing__nav--logo {
+19:   z-index: 10;
+20:   font-family: "Gotham-Black";
 
 Backtrace:
-C:\Users\Karolina\Desktop\sailor\scss\layout\_nav.scss:18
+C:\Users\Karolina\Desktop\sailor\scss\layout\_nav.scss:15
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:384:in `visit_prop'
@@ -62,4 +62,4 @@ C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$grey\".\A         on line 18 of C:\Users\Karolina\Desktop\sailor\scss\layout\_nav.scss\A \A 13:   list-style: none;\A 14: }\A 15: \A 16: .landing__nav--logo {\A 17:   font-family: \"Gotham-Black\";\A 18:   color: $grey;\A 19:   font-size: 7vh;\A 20:   float: left;\A 21:   left: 3vw;\A 22:   height: 64px;\A 23:   position: relative;"; }
+  content: "Error: Undefined variable: \"$white\".\A         on line 15 of C:\Users\Karolina\Desktop\sailor\scss\layout\_nav.scss\A \A 10: }\A 11: \A 12: .landing__nav--link {\A 13:   text-decoration: none;\A 14:   list-style: none;\A 15:   color: $white;\A 16: }\A 17: \A 18: .landing__nav--logo {\A 19:   z-index: 10;\A 20:   font-family: \"Gotham-Black\";"; }

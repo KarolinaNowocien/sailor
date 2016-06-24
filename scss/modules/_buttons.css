@@ -13,7 +13,7 @@ Error: Undefined mixin 'respond-to'.
 8:   @include respond-to(wide-screens) { top:35vw; }
 9:   @include respond-to(handhelds) { left:14vw;}
 10:   @include respond-to(medium-screens) { left:14vw; }
-11:   @include respond-to(wide-screens) { left:41.5vw; }
+11:   @include respond-to(wide-screens) { left:39.5vw; }
 
 Backtrace:
 C:\Users\Karolina\Desktop\sailor\scss\modules\_buttons.scss:6:in `respond-to'
@@ -66,4 +66,4 @@ C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'respond-to'.\A         on line 6 of C:\Users\Karolina\Desktop\sailor\scss\modules\_buttons.scss, in `respond-to'\A         from line 6 of C:\Users\Karolina\Desktop\sailor\scss\modules\_buttons.scss\A \A 1: .video__controls{\A 2:   z-index: 10;\A 3:   position: absolute;\A 4:   margin:0 auto;\A 5:   width:40vh;\A 6:   @include respond-to(handhelds) { top:130vw;}\A 7:   @include respond-to(medium-screens) { top:130vw; }\A 8:   @include respond-to(wide-screens) { top:35vw; }\A 9:   @include respond-to(handhelds) { left:14vw;}\A 10:   @include respond-to(medium-screens) { left:14vw; }\A 11:   @include respond-to(wide-screens) { left:41.5vw; }"; }
+  content: "Error: Undefined mixin 'respond-to'.\A         on line 6 of C:\Users\Karolina\Desktop\sailor\scss\modules\_buttons.scss, in `respond-to'\A         from line 6 of C:\Users\Karolina\Desktop\sailor\scss\modules\_buttons.scss\A \A 1: .video__controls{\A 2:   z-index: 10;\A 3:   position: absolute;\A 4:   margin:0 auto;\A 5:   width:40vh;\A 6:   @include respond-to(handhelds) { top:130vw;}\A 7:   @include respond-to(medium-screens) { top:130vw; }\A 8:   @include respond-to(wide-screens) { top:35vw; }\A 9:   @include respond-to(handhelds) { left:14vw;}\A 10:   @include respond-to(medium-screens) { left:14vw; }\A 11:   @include respond-to(wide-screens) { left:39.5vw; }"; }

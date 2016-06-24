@@ -8,7 +8,7 @@
   @include respond-to(wide-screens) { top:35vw; }
   @include respond-to(handhelds) { left:14vw;}
   @include respond-to(medium-screens) { left:14vw; }
-  @include respond-to(wide-screens) { left:41.5vw; }
+  @include respond-to(wide-screens) { left:39.5vw; }
 }
 
 .video__controls--button{
@@ -41,11 +41,18 @@
 }  */
 
 #button__scrolly{
+  @include respond-to(handhelds) { left:44vw;}
+  @include respond-to(medium-screens) { left:44vw; }
+  @include respond-to(wide-screens) { left:47vw; }
   cursor: pointer;
   z-index: 10;
   top:100vh;
-  height: 50px;
   position: absolute;
   background-color: transparent;
   border: none;
+}
+.landing__bg--scroll{
+  @include respond-to(handhelds) { height:100px;}
+  @include respond-to(medium-screens) { height: 100px; }
+  @include respond-to(wide-screens) { height: 50px; }
 }
