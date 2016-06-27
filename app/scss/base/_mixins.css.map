@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,UAGC;EAFD,WAAW,EAAE,aAAa;EAC1B,GAAG,EAAE,kDAAkD;;AAGvD,UAGC;EAFD,WAAW,EAAE,aAAa;EAC1B,GAAG,EAAE,kDAAkD;;AAGvD,UAGC;EAFD,WAAW,EAAE,cAAc;EAC3B,GAAG,EAAE,mDAAmD",
-"sources": ["_mixins.scss"],
-"names": [],
-"file": "_mixins.css"
-}
