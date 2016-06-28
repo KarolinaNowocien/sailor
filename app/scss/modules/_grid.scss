@@ -1,0 +1,36 @@
+$small:400px;
+$medium: 700px;
+$large:960px;
+$desktop:1200px;
+
+$susy: (
+columns:12,
+gutter: 1/4,
+math:fluid,
+output:float,
+gutter-position:inside,
+);
+
+@include susy-breakpoint ($desktop, 12){
+  .about__column--type1{
+      @include span(4 at 1);
+      @include pad(45px);
+  }
+
+  .about__column--type2{
+    @include span(6 at 1);
+    @include pad(45px);
+  }
+};
+
+@include susy-breakpoint ($large, 12){
+  .about__column--type1{
+      @include span(4 at 1);
+      @include pad(45px);
+  }
+
+  .about__column--type2{
+    @include span(6 at 1);
+    @include pad(45px);
+  }
+};

@@ -18,27 +18,6 @@ main{
   overflow: hidden;
 }
 
-.landing__text  {
-  font-family: "Gotham-Book";
-  font-weight: 100;
-  position: absolute;
-  z-index: 4;
-  color: $white;
-}
-
-.landing__text--title{
-  @include respond-to(handhelds) { margin: 39vh 17vw ;font-size: 100px ;}
-  @include respond-to(medium-screens) { margin: 39vh 17vw ;font-size: 100px ; }
-  @include respond-to(wide-screens) { margin: 39vh 31vw ;font-size: 72px ; }
-}
-
-.landing__text--subtitle{
-  @include respond-to(handhelds) { margin: 48vh 8vw ;font-size: 42px ;}
-  @include respond-to(medium-screens) { margin: 48vh 8vw ;font-size: 42px ; }
-  @include respond-to(wide-screens) { margin: 55vh 27vw ;font-size: 28px ;  }
-  opacity:.8;
-}
-
 .landing__video {
   top:0;
   @include respond-to(handhelds) { height: 80vh ;}
@@ -59,105 +38,31 @@ main{
 .about{
   text-align: center;
   color:$body;
-}
-
-.about__title{
-  font-family: "Gotham-Bold";
-  @include respond-to(handhelds) { font-size: 90px ;}
-  @include respond-to(medium-screens) { font-size: 90px ; }
-  @include respond-to(wide-screens) { font-size: 64px ; }
-}
-
-.about__subtitle{
-  @include respond-to(handhelds) { font-size: 36px ;}
-  @include respond-to(medium-screens) { font-size: 36px ; }
-  @include respond-to(wide-screens) { font-size: 24px ;  }
-  font-family: "Gotham-Book";
-  opacity:.45;
-  padding-bottom: 20px;
+  @include container(80%);
 }
 
 .about__skills--type1{
-  width: 100%;
-  margin:0 auto;
   font-weight: 100;
 }
 
 .about__skills--type2{
-  width: 100%;
-  margin:0 auto;
   font-weight: 100;
 }
 
 .about__column--type1{
-  display: inline-block;
-  vertical-align: top;
  	text-align: center;
-  padding: 45px;
-
-  @include respond-to(handhelds) { width: 100% ;}
-  @include respond-to(medium-screens) { width: 100% ; }
-  @include respond-to(wide-screens) { width: 33% ; }
 }
 
 .about__column--type2{
-  display: inline-block;
-  vertical-align: top;
  	text-align: center;
-  padding: 45px;
-
-  @include respond-to(handhelds) { width: 100% ;}
-  @include respond-to(medium-screens) { width: 100% ; }
-  @include respond-to(wide-screens) { width: 33% ; }
 }
 
 .skills__icon{
-  @include respond-to(handhelds) { height:150px; }
-  @include respond-to(medium-screens) { height:150px; }
-  @include respond-to(wide-screens) {height:80px; }
   margin-bottom: 20px;
-}
-
-.skills__title{
-  @include respond-to(handhelds) { font-size: 54px; }
-  @include respond-to(medium-screens) { font-size: 54px; }
-  @include respond-to(wide-screens) {font-size: 36px; }
-  font-family: "Gotham-Book";
-  font-weight: 100;
-  color:$body;
-  width: 100%;
-  line-height: 1.2;
-}
-
-.skills__description{
-  @include respond-to(handhelds) { font-size: 36px; }
-  @include respond-to(medium-screens) { font-size: 36px; }
-  @include respond-to(wide-screens) {font-size: 16px; }
-  font-family: "Gotham-Book";
-  margin: 10px;
-  line-height: 1.48;
-  color: $description;
 }
 
 .team{
   text-align: center;
-}
-.team__title{
-  @include respond-to(handhelds) { font-size: 90px ;}
-  @include respond-to(medium-screens) { font-size: 90px ; }
-  @include respond-to(wide-screens) { font-size: 64px ; }
-  font-family: "Gotham-Book";
-  padding: 20px;
-}
-
-.team__subtitle{
-  @include respond-to(handhelds) { font-size: 36px ;}
-  @include respond-to(medium-screens) { font-size: 36px ; }
-  @include respond-to(wide-screens) { font-size: 24px ;  }
-  font-family: "Gotham-Book";
-  padding-bottom: 20px;
-  font-weight: 100;
-  opacity:.8;
 }
 
 .owl-carousel {
@@ -188,25 +93,6 @@ main{
   background-color: $blue;
   height: 400px;
 }
-.pricing__title{
-  @include respond-to(handhelds) { font-size: 90px ;}
-  @include respond-to(medium-screens) { font-size: 90px ; }
-  @include respond-to(wide-screens) { font-size: 64px ; }
-  font-family: "Gotham-Book";
-  padding: 20px;
-  color: $white;
-}
-
-.pricing__subtitle{
-  @include respond-to(handhelds) { font-size: 36px ;}
-  @include respond-to(medium-screens) { font-size: 36px ; }
-  @include respond-to(wide-screens) { font-size: 24px ;  }
-  font-family: "Gotham-Book";
-  padding-bottom: 20px;
-  font-weight: 100;
-  opacity:.8;
-  color: $white;
-}
 
 .pricing__wrapper {
   z-index: 5;
@@ -227,27 +113,4 @@ main{
   height: 500px;
   background-color: white;
   box-shadow: 10px -10px 10px 10px rgba(68,68,68,0.1);
-}
-
-.wrapper__text  {
-  margin-top: 50px;
-  font-family: "Gotham-Book";
-  color: $body;
-
-}
-.wrapper__text--header {
-  text-transform: uppercase;
-}
-
-.wrapper__text--subtitle {
-  padding: 0 75px;
-  text-transform: capitalize;
-  margin-bottom: 50px;
-  font-size: 16px;
-}
-
-.wrapper__text--price{
-  color: $blue;
-  font-size: 40px;
-  font-weight: 100;
 }

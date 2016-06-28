@@ -1,7 +1,8 @@
 .landing__bg--opacity {
   top: 0;
   left: 0;
-  height: 120vh;
+  right: 0;
+  height: 100vh;
   width: 100%;
   position: absolute;
   z-index: 3;
@@ -60,55 +61,6 @@ main {
   overflow: hidden;
 }
 
-.landing__text {
-  font-family: "Gotham-Book";
-  font-weight: 100;
-  position: absolute;
-  z-index: 4;
-  color: #f5f6fa;
-}
-
-@media only screen and (max-width: 320px) {
-  .landing__text--title {
-    margin: 39vh 17vw;
-    font-size: 100px;
-  }
-}
-@media only screen and (min-width: 321px) and (max-width: 1024px) {
-  .landing__text--title {
-    margin: 39vh 17vw;
-    font-size: 100px;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  .landing__text--title {
-    margin: 39vh 31vw;
-    font-size: 72px;
-  }
-}
-
-.landing__text--subtitle {
-  opacity: .8;
-}
-@media only screen and (max-width: 320px) {
-  .landing__text--subtitle {
-    margin: 48vh 8vw;
-    font-size: 42px;
-  }
-}
-@media only screen and (min-width: 321px) and (max-width: 1024px) {
-  .landing__text--subtitle {
-    margin: 48vh 8vw;
-    font-size: 42px;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  .landing__text--subtitle {
-    margin: 55vh 27vw;
-    font-size: 28px;
-  }
-}
-
 .landing__video {
   top: 0;
   z-index: 0;
@@ -116,12 +68,12 @@ main {
   background-position: center center;
   background-repeat: no-repeat;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 400px) {
   .landing__video {
     height: 80vh;
   }
 }
-@media only screen and (min-width: 321px) and (max-width: 1024px) {
+@media only screen and (min-width: 401px) and (max-width: 1024px) {
   .landing__video {
     height: 120vh;
   }
@@ -141,212 +93,38 @@ main {
 .about {
   text-align: center;
   color: #333333;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
-
-.about__title {
-  font-family: "Gotham-Bold";
-}
-@media only screen and (max-width: 320px) {
-  .about__title {
-    font-size: 90px;
-  }
-}
-@media only screen and (min-width: 321px) and (max-width: 1024px) {
-  .about__title {
-    font-size: 90px;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  .about__title {
-    font-size: 64px;
-  }
-}
-
-.about__subtitle {
-  font-family: "Gotham-Book";
-  opacity: .45;
-  padding-bottom: 20px;
-}
-@media only screen and (max-width: 320px) {
-  .about__subtitle {
-    font-size: 36px;
-  }
-}
-@media only screen and (min-width: 321px) and (max-width: 1024px) {
-  .about__subtitle {
-    font-size: 36px;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  .about__subtitle {
-    font-size: 24px;
-  }
+.about:after {
+  content: " ";
+  display: block;
+  clear: both;
 }
 
 .about__skills--type1 {
-  width: 100%;
-  margin: 0 auto;
   font-weight: 100;
 }
 
 .about__skills--type2 {
-  width: 100%;
-  margin: 0 auto;
   font-weight: 100;
 }
 
 .about__column--type1 {
-  display: inline-block;
-  vertical-align: top;
   text-align: center;
-  padding: 45px;
-}
-@media only screen and (max-width: 320px) {
-  .about__column--type1 {
-    width: 100%;
-  }
-}
-@media only screen and (min-width: 321px) and (max-width: 1024px) {
-  .about__column--type1 {
-    width: 100%;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  .about__column--type1 {
-    width: 33%;
-  }
 }
 
 .about__column--type2 {
-  display: inline-block;
-  vertical-align: top;
   text-align: center;
-  padding: 45px;
-}
-@media only screen and (max-width: 320px) {
-  .about__column--type2 {
-    width: 100%;
-  }
-}
-@media only screen and (min-width: 321px) and (max-width: 1024px) {
-  .about__column--type2 {
-    width: 100%;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  .about__column--type2 {
-    width: 33%;
-  }
 }
 
 .skills__icon {
   margin-bottom: 20px;
 }
-@media only screen and (max-width: 320px) {
-  .skills__icon {
-    height: 150px;
-  }
-}
-@media only screen and (min-width: 321px) and (max-width: 1024px) {
-  .skills__icon {
-    height: 150px;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  .skills__icon {
-    height: 80px;
-  }
-}
-
-.skills__title {
-  font-family: "Gotham-Book";
-  font-weight: 100;
-  color: #333333;
-  width: 100%;
-  line-height: 1.2;
-}
-@media only screen and (max-width: 320px) {
-  .skills__title {
-    font-size: 54px;
-  }
-}
-@media only screen and (min-width: 321px) and (max-width: 1024px) {
-  .skills__title {
-    font-size: 54px;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  .skills__title {
-    font-size: 36px;
-  }
-}
-
-.skills__description {
-  font-family: "Gotham-Book";
-  margin: 10px;
-  line-height: 1.48;
-  color: #8f8f8f;
-}
-@media only screen and (max-width: 320px) {
-  .skills__description {
-    font-size: 36px;
-  }
-}
-@media only screen and (min-width: 321px) and (max-width: 1024px) {
-  .skills__description {
-    font-size: 36px;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  .skills__description {
-    font-size: 16px;
-  }
-}
 
 .team {
   text-align: center;
-}
-
-.team__title {
-  font-family: "Gotham-Book";
-  padding: 20px;
-}
-@media only screen and (max-width: 320px) {
-  .team__title {
-    font-size: 90px;
-  }
-}
-@media only screen and (min-width: 321px) and (max-width: 1024px) {
-  .team__title {
-    font-size: 90px;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  .team__title {
-    font-size: 64px;
-  }
-}
-
-.team__subtitle {
-  font-family: "Gotham-Book";
-  padding-bottom: 20px;
-  font-weight: 100;
-  opacity: .8;
-}
-@media only screen and (max-width: 320px) {
-  .team__subtitle {
-    font-size: 36px;
-  }
-}
-@media only screen and (min-width: 321px) and (max-width: 1024px) {
-  .team__subtitle {
-    font-size: 36px;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  .team__subtitle {
-    font-size: 24px;
-  }
 }
 
 .owl-carousel {
@@ -366,12 +144,12 @@ main {
   text-align: center;
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 400px) {
   .item {
     width: 340px;
   }
 }
-@media only screen and (min-width: 321px) and (max-width: 1024px) {
+@media only screen and (min-width: 401px) and (max-width: 1024px) {
   .item {
     width: 340px;
   }
@@ -386,50 +164,6 @@ main {
   text-align: center;
   background-color: #045dcd;
   height: 400px;
-}
-
-.pricing__title {
-  font-family: "Gotham-Book";
-  padding: 20px;
-  color: #f5f6fa;
-}
-@media only screen and (max-width: 320px) {
-  .pricing__title {
-    font-size: 90px;
-  }
-}
-@media only screen and (min-width: 321px) and (max-width: 1024px) {
-  .pricing__title {
-    font-size: 90px;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  .pricing__title {
-    font-size: 64px;
-  }
-}
-
-.pricing__subtitle {
-  font-family: "Gotham-Book";
-  padding-bottom: 20px;
-  font-weight: 100;
-  opacity: .8;
-  color: #f5f6fa;
-}
-@media only screen and (max-width: 320px) {
-  .pricing__subtitle {
-    font-size: 36px;
-  }
-}
-@media only screen and (min-width: 321px) and (max-width: 1024px) {
-  .pricing__subtitle {
-    font-size: 36px;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  .pricing__subtitle {
-    font-size: 24px;
-  }
 }
 
 .pricing__wrapper {
@@ -452,29 +186,6 @@ main {
   height: 500px;
   background-color: white;
   box-shadow: 10px -10px 10px 10px rgba(68, 68, 68, 0.1);
-}
-
-.wrapper__text {
-  margin-top: 50px;
-  font-family: "Gotham-Book";
-  color: #333333;
-}
-
-.wrapper__text--header {
-  text-transform: uppercase;
-}
-
-.wrapper__text--subtitle {
-  padding: 0 75px;
-  text-transform: capitalize;
-  margin-bottom: 50px;
-  font-size: 16px;
-}
-
-.wrapper__text--price {
-  color: #045dcd;
-  font-size: 40px;
-  font-weight: 100;
 }
 
 .landing__nav {
@@ -503,13 +214,13 @@ main {
   left: 3vw;
   color: #f5f6fa;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 400px) {
   .landing__nav--logo {
     font-size: 64px;
     position: fixed;
   }
 }
-@media only screen and (min-width: 321px) and (max-width: 1024px) {
+@media only screen and (min-width: 401px) and (max-width: 1024px) {
   .landing__nav--logo {
     font-size: 64px;
     position: fixed;
@@ -528,7 +239,7 @@ main {
   float: right;
   transition: all 350ms ease-out;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 400px) {
   .nav__wrapper {
     position: fixed;
     width: 100vw;
@@ -536,7 +247,7 @@ main {
     background-color: #333333;
   }
 }
-@media only screen and (min-width: 321px) and (max-width: 1024px) {
+@media only screen and (min-width: 401px) and (max-width: 1024px) {
   .nav__wrapper {
     position: fixed;
     width: 100vw;
@@ -555,12 +266,12 @@ main {
   text-transform: capitalize;
   letter-spacing: 2px;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 400px) {
   .nav__wrapper--list {
     padding: 40vw;
   }
 }
-@media only screen and (min-width: 321px) and (max-width: 1024px) {
+@media only screen and (min-width: 401px) and (max-width: 1024px) {
   .nav__wrapper--list {
     padding: 40vw;
   }
@@ -579,13 +290,13 @@ main {
 .nav__wrapper--list-item:last-of-type a {
   border-radius: 20px;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 400px) {
   .nav__wrapper--list-item:last-of-type a {
     font-size: 36px;
     color: #f5a623;
   }
 }
-@media only screen and (min-width: 321px) and (max-width: 1024px) {
+@media only screen and (min-width: 401px) and (max-width: 1024px) {
   .nav__wrapper--list-item:last-of-type a {
     font-size: 36px;
     color: #f5a623;
@@ -615,12 +326,12 @@ main {
   font-weight: 600;
   float: left;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 400px) {
   .nav__wrapper--link {
     font-size: 36px;
   }
 }
-@media only screen and (min-width: 321px) and (max-width: 1024px) {
+@media only screen and (min-width: 401px) and (max-width: 1024px) {
   .nav__wrapper--link {
     font-size: 36px;
   }
@@ -716,18 +427,303 @@ main {
     display: block;
   }
 }
+@media (min-width: 1200px) {
+  .about__column--type1 {
+    box-sizing: border-box;
+    width: 33.33333%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .about__column--type2 {
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+}
+@media (min-width: 960px) {
+  .about__column--type1 {
+    box-sizing: border-box;
+    width: 33.33333%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .about__column--type2 {
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+}
+.landing__text {
+  font-family: "Gotham-Book";
+  font-weight: 100;
+  position: absolute;
+  z-index: 4;
+  color: #f5f6fa;
+}
+
+@media only screen and (max-width: 400px) {
+  .landing__text--title {
+    margin: 39vh 17vw;
+    font-size: 100px;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 1024px) {
+  .landing__text--title {
+    margin: 39vh 17vw;
+    font-size: 100px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .landing__text--title {
+    margin: 39vh 31vw;
+    font-size: 72px;
+  }
+}
+
+.landing__text--subtitle {
+  opacity: .8;
+}
+@media only screen and (max-width: 400px) {
+  .landing__text--subtitle {
+    margin: 48vh 8vw;
+    font-size: 42px;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 1024px) {
+  .landing__text--subtitle {
+    margin: 48vh 8vw;
+    font-size: 42px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .landing__text--subtitle {
+    margin: 55vh 27vw;
+    font-size: 28px;
+  }
+}
+
+.about__title {
+  font-family: "Gotham-Bold";
+}
+@media only screen and (max-width: 400px) {
+  .about__title {
+    font-size: 90px;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 1024px) {
+  .about__title {
+    font-size: 90px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .about__title {
+    font-size: 64px;
+  }
+}
+
+.about__subtitle {
+  font-family: "Gotham-Book";
+  opacity: .45;
+  padding-bottom: 20px;
+}
+@media only screen and (max-width: 400px) {
+  .about__subtitle {
+    font-size: 36px;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 1024px) {
+  .about__subtitle {
+    font-size: 36px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .about__subtitle {
+    font-size: 24px;
+  }
+}
+
+.skills__title {
+  font-family: "Gotham-Book";
+  font-weight: 100;
+  color: #333333;
+  width: 100%;
+  line-height: 1.2;
+}
+@media only screen and (max-width: 400px) {
+  .skills__title {
+    font-size: 54px;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 1024px) {
+  .skills__title {
+    font-size: 54px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .skills__title {
+    font-size: 36px;
+  }
+}
+
+.skills__description {
+  font-family: "Gotham-Book";
+  margin: 10px;
+  line-height: 1.48;
+  color: #8f8f8f;
+}
+@media only screen and (max-width: 400px) {
+  .skills__description {
+    font-size: 36px;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 1024px) {
+  .skills__description {
+    font-size: 36px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .skills__description {
+    font-size: 16px;
+  }
+}
+
+.team__title {
+  font-family: "Gotham-Book";
+  padding: 20px;
+}
+@media only screen and (max-width: 400px) {
+  .team__title {
+    font-size: 90px;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 1024px) {
+  .team__title {
+    font-size: 90px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .team__title {
+    font-size: 64px;
+  }
+}
+
+.team__subtitle {
+  font-family: "Gotham-Book";
+  padding-bottom: 20px;
+  font-weight: 100;
+  opacity: .8;
+}
+@media only screen and (max-width: 400px) {
+  .team__subtitle {
+    font-size: 36px;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 1024px) {
+  .team__subtitle {
+    font-size: 36px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .team__subtitle {
+    font-size: 24px;
+  }
+}
+
+.pricing__title {
+  font-family: "Gotham-Book";
+  padding: 20px;
+  color: #f5f6fa;
+}
+@media only screen and (max-width: 400px) {
+  .pricing__title {
+    font-size: 90px;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 1024px) {
+  .pricing__title {
+    font-size: 90px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .pricing__title {
+    font-size: 64px;
+  }
+}
+
+.pricing__subtitle {
+  font-family: "Gotham-Book";
+  padding-bottom: 20px;
+  font-weight: 100;
+  opacity: .8;
+  color: #f5f6fa;
+}
+@media only screen and (max-width: 400px) {
+  .pricing__subtitle {
+    font-size: 36px;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 1024px) {
+  .pricing__subtitle {
+    font-size: 36px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .pricing__subtitle {
+    font-size: 24px;
+  }
+}
+
+.wrapper__text {
+  margin-top: 50px;
+  font-family: "Gotham-Book";
+  color: #333333;
+}
+
+.wrapper__text--header {
+  text-transform: uppercase;
+}
+
+.wrapper__text--subtitle {
+  padding: 0 75px;
+  text-transform: capitalize;
+  margin-bottom: 50px;
+  font-size: 16px;
+}
+
+.wrapper__text--price {
+  color: #045dcd;
+  font-size: 40px;
+  font-weight: 100;
+}
+
 .video__controls {
   z-index: 10;
   position: absolute;
   margin: 0 auto;
   width: 40vh;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 400px) {
   .video__controls {
     top: 130vw;
   }
 }
-@media only screen and (min-width: 321px) and (max-width: 1024px) {
+@media only screen and (min-width: 401px) and (max-width: 1024px) {
   .video__controls {
     top: 130vw;
   }
@@ -737,12 +733,12 @@ main {
     top: 35vw;
   }
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 400px) {
   .video__controls {
     left: 14vw;
   }
 }
-@media only screen and (min-width: 321px) and (max-width: 1024px) {
+@media only screen and (min-width: 401px) and (max-width: 1024px) {
   .video__controls {
     left: 14vw;
   }
@@ -764,12 +760,12 @@ main {
   color: #f5f6fa;
   cursor: pointer;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 400px) {
   .video__controls--button {
     border-radius: 80px;
   }
 }
-@media only screen and (min-width: 321px) and (max-width: 1024px) {
+@media only screen and (min-width: 401px) and (max-width: 1024px) {
   .video__controls--button {
     border-radius: 80px;
   }
@@ -785,13 +781,13 @@ main {
   border: 1px solid #f5f6fa;
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 400px) {
   .video__controls--play {
     height: 2.5vh;
     padding-right: 14px;
   }
 }
-@media only screen and (min-width: 321px) and (max-width: 1024px) {
+@media only screen and (min-width: 401px) and (max-width: 1024px) {
   .video__controls--play {
     height: 2.5vh;
     padding-right: 14px;
@@ -810,17 +806,17 @@ main {
 #button__scrolly {
   cursor: pointer;
   z-index: 10;
-  top: 100vh;
+  top: 88vh;
   position: absolute;
   background-color: transparent;
   border: none;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 400px) {
   #button__scrolly {
     left: 44vw;
   }
 }
-@media only screen and (min-width: 321px) and (max-width: 1024px) {
+@media only screen and (min-width: 401px) and (max-width: 1024px) {
   #button__scrolly {
     left: 44vw;
   }
@@ -831,12 +827,12 @@ main {
   }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 400px) {
   .landing__bg--scroll {
     height: 100px;
   }
 }
-@media only screen and (min-width: 321px) and (max-width: 1024px) {
+@media only screen and (min-width: 401px) and (max-width: 1024px) {
   .landing__bg--scroll {
     height: 100px;
   }
