@@ -192,7 +192,7 @@ main {
   position: relative;
 }
 
-.pricing__sth {
+.pricing__bg {
   background-color: #daebf9;
   height: 200px;
   position: relative;
@@ -216,8 +216,39 @@ main {
   z-index: 10;
   display: inline-block;
   background-color: white;
-  height: 500px;
-  width: 350px;
+  height: 450px;
+  width: 300px;
+}
+
+.wrapper__divider--horizontal {
+  z-index: 15;
+  background-color: #333333;
+  height: 0.05vh;
+  opacity: .5;
+  width: 10vw;
+  margin: 2vh auto;
+}
+
+.wrapper__divider--vertical {
+  z-index: 15;
+  background-color: #333333;
+  height: 40vh;
+  opacity: .5;
+  width: 0.05vw;
+  margin: 0 0;
+}
+
+.join-us {
+  position: relative;
+  text-align: center;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.join-us:after {
+  content: " ";
+  display: block;
+  clear: both;
 }
 
 .landing__nav {
@@ -530,15 +561,15 @@ main {
     box-sizing: border-box;
     width: 100%;
     float: left;
-    padding-left: 0.41667%;
-    padding-right: 0.41667%;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
   }
   .pricing__wrapper .pricing__wrapper--column {
     box-sizing: border-box;
-    width: 50%;
+    width: 25%;
     float: left;
-    padding-left: 0.41667%;
-    padding-right: 0.41667%;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
   }
 }
 @font-face {
@@ -614,52 +645,52 @@ main {
   }
 }
 
-.about__title {
+.about__title, .team__title, .join-us__title {
   font-family: "Gotham-Bold";
 }
 @media only screen and (max-width: 400px) {
-  .about__title {
+  .about__title, .team__title, .join-us__title {
     font-size: 90px;
   }
 }
 @media only screen and (min-width: 401px) and (max-width: 700px) {
-  .about__title {
+  .about__title, .team__title, .join-us__title {
     font-size: 90px;
   }
 }
 @media only screen and (min-width: 701px) and (max-width: 1200px) {
-  .about__title {
+  .about__title, .team__title, .join-us__title {
     font-size: 90px;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .about__title {
+  .about__title, .team__title, .join-us__title {
     font-size: 64px;
   }
 }
 
-.about__subtitle {
+.about__subtitle, .team__subtitle, .join-us__subtitle {
   font-family: "Gotham-Book";
-  opacity: .45;
+  opacity: .7;
   padding-bottom: 20px;
 }
 @media only screen and (max-width: 400px) {
-  .about__subtitle {
+  .about__subtitle, .team__subtitle, .join-us__subtitle {
     font-size: 36px;
   }
 }
 @media only screen and (min-width: 401px) and (max-width: 700px) {
-  .about__subtitle {
+  .about__subtitle, .team__subtitle, .join-us__subtitle {
     font-size: 36px;
   }
 }
 @media only screen and (min-width: 701px) and (max-width: 1200px) {
-  .about__subtitle {
+  .about__subtitle, .team__subtitle, .join-us__subtitle {
     font-size: 36px;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .about__subtitle {
+  .about__subtitle, .team__subtitle, .join-us__subtitle {
     font-size: 24px;
   }
 }
@@ -719,58 +750,6 @@ main {
   }
 }
 
-.team__title {
-  font-family: "Gotham-Book";
-  padding: 20px;
-}
-@media only screen and (max-width: 400px) {
-  .team__title {
-    font-size: 90px;
-  }
-}
-@media only screen and (min-width: 401px) and (max-width: 700px) {
-  .team__title {
-    font-size: 90px;
-  }
-}
-@media only screen and (min-width: 701px) and (max-width: 1200px) {
-  .team__title {
-    font-size: 90px;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .team__title {
-    font-size: 64px;
-  }
-}
-
-.team__subtitle {
-  font-family: "Gotham-Book";
-  padding-bottom: 20px;
-  font-weight: 100;
-  opacity: .8;
-}
-@media only screen and (max-width: 400px) {
-  .team__subtitle {
-    font-size: 36px;
-  }
-}
-@media only screen and (min-width: 401px) and (max-width: 700px) {
-  .team__subtitle {
-    font-size: 36px;
-  }
-}
-@media only screen and (min-width: 701px) and (max-width: 1200px) {
-  .team__subtitle {
-    font-size: 36px;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .team__subtitle {
-    font-size: 24px;
-  }
-}
-
 .pricing__title {
   font-family: "Gotham-Book";
   padding: 20px;
@@ -803,6 +782,9 @@ main {
   font-weight: 100;
   opacity: .8;
   color: #f5f6fa;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media only screen and (max-width: 400px) {
   .pricing__subtitle {
@@ -823,6 +805,11 @@ main {
   .pricing__subtitle {
     font-size: 24px;
   }
+}
+.pricing__subtitle:after {
+  content: " ";
+  display: block;
+  clear: both;
 }
 
 .wrapper__text {

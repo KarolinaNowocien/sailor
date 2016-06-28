@@ -36,7 +36,7 @@ src: url('../fonts/Gotham-Black.otf') format('opentype');
   opacity:.8;
 }
 
-.about__title{
+.about__title, .team__title, .join-us__title{
   font-family: "Gotham-Bold";
   @include respond-to(small) { font-size: 90px ;}
   @include respond-to(medium) { font-size: 90px ; }
@@ -44,13 +44,13 @@ src: url('../fonts/Gotham-Black.otf') format('opentype');
   @include respond-to(desktop) { font-size: 64px ; }
 }
 
-.about__subtitle{
+.about__subtitle, .team__subtitle, .join-us__subtitle {
   @include respond-to(small) { font-size: 36px ;}
   @include respond-to(medium) { font-size: 36px ; }
   @include respond-to(large) { font-size: 36px ;  }
   @include respond-to(desktop) { font-size: 24px ;  }
   font-family: "Gotham-Book";
-  opacity:.45;
+  opacity:.7;
   padding-bottom: 20px;
 }
 
@@ -77,25 +77,6 @@ src: url('../fonts/Gotham-Black.otf') format('opentype');
   color: $description;
 }
 
-.team__title{
-  @include respond-to(small) { font-size: 90px ;}
-  @include respond-to(medium) { font-size: 90px ; }
-  @include respond-to(large) { font-size: 90px ; }
-  @include respond-to(desktop) { font-size: 64px ; }
-  font-family: "Gotham-Book";
-  padding: 20px;
-}
-
-.team__subtitle{
-  @include respond-to(small) { font-size: 36px ;}
-  @include respond-to(medium) { font-size: 36px ; }
-  @include respond-to(large) { font-size: 36px ;  }
-  @include respond-to(desktop) { font-size: 24px ;  }
-  font-family: "Gotham-Book";
-  padding-bottom: 20px;
-  font-weight: 100;
-  opacity:.8;
-}
 
 .pricing__title{
   @include respond-to(small) { font-size: 90px ;}
@@ -117,6 +98,7 @@ src: url('../fonts/Gotham-Black.otf') format('opentype');
   font-weight: 100;
   opacity:.8;
   color: $white;
+  @include container(80%);
 }
 
 .wrapper__text  {

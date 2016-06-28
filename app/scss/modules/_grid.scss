@@ -30,11 +30,11 @@ gutter-position:inside,
   };
 
   @include breakpoint ($desktop){
-    @include layout(24);
+    @include layout(12);
     .pricing__wrapper{
-        @include span(24);
+        @include span(12);
         .pricing__wrapper--column{
-          @include span(12);
+          @include span(3 at 4 );
         }
         }
     };
