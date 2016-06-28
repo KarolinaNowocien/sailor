@@ -18,11 +18,28 @@ main{
   overflow: hidden;
 }
 
+.landing__bg--opacity {
+    top:0;
+    left:0;
+    right: 0;
+    height:100vh;
+    width: 100%;
+    position: absolute;
+    z-index: 3;
+    background-color: #000365;
+    background-image: -webkit-linear-gradient(#000365, #006ffc);
+    background-image: -o-linear-gradient(#000365, #006ffc);
+    background-image: -moz-linear-gradient(#000365, #006ffc);
+    background-image: linear-gradient(#000365, #006ffc);
+    opacity: 0.6;
+}
+
 .landing__video {
   top:0;
-  @include respond-to(handhelds) { height: 80vh ;}
-  @include respond-to(medium-screens) { height: 120vh ; }
-  @include respond-to(wide-screens) { height: 120vh ; }
+  @include respond-to(small) { height:120vh; }
+  @include respond-to(medium) { height:120vh; }
+  @include respond-to(large) { height:120vh; }
+  @include respond-to(desktop) {height:60vw; }
   z-index: 0;
   position: relative;
   background-position: center center;
@@ -49,20 +66,22 @@ main{
   font-weight: 100;
 }
 
-.about__column--type1{
- 	text-align: center;
-}
-
-.about__column--type2{
- 	text-align: center;
+.about__column{
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .skills__icon{
+  @include respond-to(small) { height:150px; }
+  @include respond-to(medium) { height:150px; }
+  @include respond-to(large) { height:150px; }
+  @include respond-to(desktop) {height:70px; }
   margin-bottom: 20px;
 }
 
 .team{
   text-align: center;
+  @include container(80%);
 }
 
 .owl-carousel {
@@ -75,42 +94,46 @@ main{
   margin:0;
 }
 
-.team__member{
+.team__member--image{
   display: inline-block;
   vertical-align: top;
- 	width: 25%;
- 	text-align: center;
+  @include respond-to(desktop) { padding:60px; }
 }
 
 .item{
-  @include respond-to(handhelds) { width: 340px;}
-  @include respond-to(medium-screens) { width: 340px;}
-  @include respond-to(wide-screens) { width: 400px; }
+  @include respond-to(small) { width: 340px;}
+  @include respond-to(medium) { width: 340px;}
+  @include respond-to(large) { width: 400px; }
+  @include respond-to(desktop) { width: 400px; }
 }
 
 .pricing{
   text-align: center;
   background-color: $blue;
-  height: 400px;
-}
-
-.pricing__wrapper {
-  z-index: 5;
-  max-width: 960px;
-  margin: 0 auto;
   position: relative;
-  padding-top: 3em;
+}
+.pricing__sth{
+  background-color: $blue-pricing;
+  height: 200px;
+  position: relative;
+  z-index: 0;
+  top: 200px;
+}
+.pricing__wrapper {
+  padding-top: 60px;
+  z-index: 5;
+  height:500px;
 }
 .pricing__wrapper--column{
-  width: 40%;
-  display: inline-block;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .wrapper__inner {
+  position: relative;
   z-index: 10;
   display: inline-block;
-  width: 102%;
-  height: 500px;
   background-color: white;
-  box-shadow: 10px -10px 10px 10px rgba(68,68,68,0.1);
+  height: 500px;
+  width: 350px;
 }

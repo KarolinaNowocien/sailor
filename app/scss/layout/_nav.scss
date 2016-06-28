@@ -20,20 +20,23 @@
   margin-left: 3vw;
   z-index: 10;
   font-family: "Gotham-Bold";
-  @include respond-to(handhelds) { font-size: 64px;position: fixed;}
-  @include respond-to(medium-screens) { font-size: 64px;position: fixed;}
-  @include respond-to(wide-screens) { font-size: 64px;position: absolute;}
+  @include respond-to(small) { font-size: 64px;position: fixed;}
+  @include respond-to(medium) { font-size: 64px;position: fixed;}
+  @include respond-to(large) { font-size: 64px;position: fixed;}
+  @include respond-to(desktop) { font-size: 64px;position: absolute;}
   float: left;
   left: 3vw;
   color: $white;
 }
 
 .nav__wrapper {
-  @include respond-to(handhelds) { position: fixed;width: 100vw;
-  margin: 100px 0 0 0;background-color: $body;}
-  @include respond-to(medium-screens) { position: fixed;width: 100vw;
-  margin: 100px 0 0 0;background-color: $body;}
-  @include respond-to(wide-screens) { position: absolute; }
+  @include respond-to(small) { position: fixed;width: 100vw;
+  margin: 100px 0 0 0;background-color: $navy-dark;}
+  @include respond-to(medium) { position: fixed;width: 100vw;
+  margin: 100px 0 0 0;background-color: $navy-dark;}
+  @include respond-to(large) { position: fixed;width: 100vw;
+  margin: 100px 0 0 0;background-color: $navy-dark;}
+  @include respond-to(desktop) { position: absolute; }
   top:0;
   right:0;
   float: right;
@@ -41,9 +44,10 @@
 }
 
 .nav__wrapper--list {
-  @include respond-to(handhelds) { padding: 40vw;}
-  @include respond-to(medium-screens) { padding: 40vw;}
-  @include respond-to(wide-screens) { padding: 2vw; }
+  @include respond-to(small) { padding: 40vw;}
+  @include respond-to(medium) { padding: 40vw;}
+  @include respond-to(large) { padding: 40vw; }
+  @include respond-to(desktop) { padding: 2vw; }
   list-style: none;
   text-transform: capitalize;
   letter-spacing: 2px;
@@ -55,9 +59,10 @@
 }
 
 .nav__wrapper--list-item:last-of-type a {
-  @include respond-to(handhelds) { font-size: 36px; color:$yellow; }
-  @include respond-to(medium-screens) { font-size: 36px; color:$yellow; }
-  @include respond-to(wide-screens) { font-size: 14px;border: solid 1px white;padding: 10px; }
+  @include respond-to(small) { font-size: 36px; color:$yellow; }
+  @include respond-to(medium) { font-size: 36px; color:$yellow; }
+  @include respond-to(large) { font-size: 36px; color:$yellow; }
+  @include respond-to(desktop) { font-size: 14px;border: solid 1px white;padding: 10px; }
   border-radius: 20px;
   &:hover{
     border: $yellow solid 1px;
@@ -75,10 +80,12 @@
   margin-right: 1.5vw;
   font-family: "Gotham-Book";
   font-weight: 600;
-  @include respond-to(handhelds) { font-size: 36px;}
-  @include respond-to(medium-screens) { font-size: 36px; }
-  @include respond-to(wide-screens) { font-size: 16px; }
+  @include respond-to(small) { font-size: 36px;}
+  @include respond-to(medium) { font-size: 36px; }
+  @include respond-to(large) { font-size: 36px; }
+  @include respond-to(desktop) { font-size: 16px; }
   float: left;
+  text-transform:uppercase;
   &:hover{
     border-bottom: $white solid 1px;
     border-radius: 0;

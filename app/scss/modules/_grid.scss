@@ -11,26 +11,30 @@ output:float,
 gutter-position:inside,
 );
 
-@include susy-breakpoint ($desktop, 12){
-  .about__column--type1{
-      @include span(4 at 1);
-      @include pad(45px);
-  }
+@include breakpoint ($desktop){
+  @include layout(24);
+  .about__skills--type1{
+      @include span(24);
+      .about__column--type1{
+        @include span(8);
+        @include pad(10px);
+      }
+      }
+  .about__skills--type2{
+      @include span(24);
+      .about__column--type2{
+        @include span(12);
+        @include pad(100px);
+      }
+      }
+  };
 
-  .about__column--type2{
-    @include span(6 at 1);
-    @include pad(45px);
-  }
-};
-
-@include susy-breakpoint ($large, 12){
-  .about__column--type1{
-      @include span(4 at 1);
-      @include pad(45px);
-  }
-
-  .about__column--type2{
-    @include span(6 at 1);
-    @include pad(45px);
-  }
-};
+  @include breakpoint ($desktop){
+    @include layout(24);
+    .pricing__wrapper{
+        @include span(24);
+        .pricing__wrapper--column{
+          @include span(12);
+        }
+        }
+    };
