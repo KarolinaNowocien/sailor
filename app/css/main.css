@@ -29,68 +29,26 @@ main {
   margin: 8vh auto;
 }
 
-.landing__bg {
-  text-align: center;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-}
-
-.landing__bg--opacity {
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 100vh;
-  width: 100%;
-  position: absolute;
-  z-index: 3;
-  background-color: #000365;
-  background-image: linear-gradient(#000365, #006ffc);
-  opacity: 0.6;
-}
-
-.landing__video {
-  top: 0;
-  z-index: 0;
-  position: relative;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-@media only screen and (max-width: 400px) {
-  .landing__video {
-    height: 120vh;
-  }
-}
-@media only screen and (min-width: 401px) and (max-width: 700px) {
-  .landing__video {
-    height: 120vh;
-  }
-}
-@media only screen and (min-width: 701px) and (max-width: 1200px) {
-  .landing__video {
-    height: 120vh;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .landing__video {
-    height: 60vw;
-  }
-}
-
-.landing__video:after {
-  content: "";
-  display: block;
-  width: 100%;
-}
-
-.about {
+.section {
   text-align: center;
   color: #333333;
+}
+
+.blue {
+  color: #f5f6fa;
+  background-color: #045dcd;
+}
+
+.grey {
+  background-color: #eff8fd;
+}
+
+.section__inner {
   max-width: 80%;
   margin-left: auto;
   margin-right: auto;
 }
-.about:after {
+.section__inner:after {
   content: " ";
   display: block;
   clear: both;
@@ -147,16 +105,6 @@ main {
 .skills__icon {
   margin-bottom: 20px;
 }
-@media only screen and (max-width: 400px) {
-  .skills__icon {
-    height: 150px;
-  }
-}
-@media only screen and (min-width: 401px) and (max-width: 700px) {
-  .skills__icon {
-    height: 150px;
-  }
-}
 @media only screen and (min-width: 701px) and (max-width: 1200px) {
   .skills__icon {
     height: 150px;
@@ -166,18 +114,6 @@ main {
   .skills__icon {
     height: 70px;
   }
-}
-
-.team {
-  text-align: center;
-  max-width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-}
-.team:after {
-  content: " ";
-  display: block;
-  clear: both;
 }
 
 .owl-carousel {
@@ -200,16 +136,6 @@ main {
   }
 }
 
-@media only screen and (max-width: 400px) {
-  .item {
-    width: 340px;
-  }
-}
-@media only screen and (min-width: 401px) and (max-width: 700px) {
-  .item {
-    width: 340px;
-  }
-}
 @media only screen and (min-width: 701px) and (max-width: 1200px) {
   .item {
     width: 400px;
@@ -219,11 +145,6 @@ main {
   .item {
     width: 400px;
   }
-}
-
-.pricing {
-  text-align: center;
-  background-color: #045dcd;
 }
 
 .pricing__bg {
@@ -283,20 +204,8 @@ main {
     padding-right: 0.83333%;
   }
 }
-.join-us {
-  text-align: center;
-  max-width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-}
-.join-us:after {
-  content: " ";
-  display: block;
-  clear: both;
-}
-
 @media (min-width: 1200px) {
-  .article__main {
+  .section__main {
     box-sizing: border-box;
     width: 50%;
     float: left;
@@ -305,7 +214,7 @@ main {
     padding-right: 5.41667%;
   }
 
-  .article__aside {
+  .section__aside {
     box-sizing: border-box;
     width: 50%;
     float: left;
@@ -318,7 +227,34 @@ main {
   margin-left: 50px;
 }
 
-.landing__nav {
+@media (min-width: 1200px) {
+  .article--left {
+    box-sizing: border-box;
+    width: 58.33333%;
+    float: left;
+    padding-left: 0.41667%;
+    padding-right: 0.41667%;
+    background-color: #f5f6fa;
+  }
+
+  .article--right {
+    box-sizing: border-box;
+    width: 41.66667%;
+    float: left;
+    padding-left: 0.41667%;
+    padding-right: 0.41667%;
+    background-color: #f5f6fa;
+  }
+}
+.image1 {
+  width: 100%;
+}
+
+.image2 {
+  width: 100%;
+}
+
+.navigation {
   position: absolute;
   z-index: 100;
   width: 100%;
@@ -329,13 +265,13 @@ main {
   width: 95vw;
 }
 
-.landing__nav--link {
+.navigation__item--logo {
   text-decoration: none;
   list-style: none;
   color: #f5f6fa;
 }
 
-.landing__nav--logo {
+.logo {
   margin-top: 1.7vh;
   margin-left: 3vw;
   z-index: 10;
@@ -344,55 +280,27 @@ main {
   left: 3vw;
   color: #f5f6fa;
 }
-@media only screen and (max-width: 400px) {
-  .landing__nav--logo {
-    font-size: 64px;
-    position: fixed;
-  }
-}
-@media only screen and (min-width: 401px) and (max-width: 700px) {
-  .landing__nav--logo {
-    font-size: 64px;
-    position: fixed;
-  }
-}
 @media only screen and (min-width: 701px) and (max-width: 1200px) {
-  .landing__nav--logo {
+  .logo {
     font-size: 64px;
     position: fixed;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .landing__nav--logo {
+  .logo {
     font-size: 64px;
     position: absolute;
   }
 }
 
-.nav__wrapper {
+.navigation__wrapper {
   top: 0;
   right: 0;
   float: right;
   transition: all 350ms ease-out;
 }
-@media only screen and (max-width: 400px) {
-  .nav__wrapper {
-    position: fixed;
-    width: 100vw;
-    margin: 100px 0 0 0;
-    background-color: #09182d;
-  }
-}
-@media only screen and (min-width: 401px) and (max-width: 700px) {
-  .nav__wrapper {
-    position: fixed;
-    width: 100vw;
-    margin: 100px 0 0 0;
-    background-color: #09182d;
-  }
-}
 @media only screen and (min-width: 701px) and (max-width: 1200px) {
-  .nav__wrapper {
+  .navigation__wrapper {
     position: fixed;
     width: 100vw;
     margin: 100px 0 0 0;
@@ -400,76 +308,54 @@ main {
   }
 }
 @media only screen and (min-width: 1200px) {
-  .nav__wrapper {
+  .navigation__wrapper {
     position: absolute;
   }
 }
 
-.nav__wrapper--list {
+.wrapper__list {
   list-style: none;
   text-transform: capitalize;
   letter-spacing: 2px;
 }
-@media only screen and (max-width: 400px) {
-  .nav__wrapper--list {
-    padding: 40vw;
-  }
-}
-@media only screen and (min-width: 401px) and (max-width: 700px) {
-  .nav__wrapper--list {
-    padding: 40vw;
-  }
-}
 @media only screen and (min-width: 701px) and (max-width: 1200px) {
-  .nav__wrapper--list {
+  .wrapper__list {
     padding: 40vw;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .nav__wrapper--list {
+  .wrapper__list {
     padding: 2vw;
   }
 }
 
-.nav__wrapper--list-item {
+.wrapper__list-item {
   float: left;
   display: block;
 }
 
-.nav__wrapper--list-item:last-of-type a {
+.wrapper__list-item:last-of-type a {
   border-radius: 20px;
 }
-@media only screen and (max-width: 400px) {
-  .nav__wrapper--list-item:last-of-type a {
-    font-size: 36px;
-    color: #f5a623;
-  }
-}
-@media only screen and (min-width: 401px) and (max-width: 700px) {
-  .nav__wrapper--list-item:last-of-type a {
-    font-size: 36px;
-    color: #f5a623;
-  }
-}
 @media only screen and (min-width: 701px) and (max-width: 1200px) {
-  .nav__wrapper--list-item:last-of-type a {
+  .wrapper__list-item:last-of-type a {
     font-size: 36px;
     color: #f5a623;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .nav__wrapper--list-item:last-of-type a {
+  .wrapper__list-item:last-of-type a {
     font-size: 14px;
     border: solid 1px white;
     padding: 10px;
   }
 }
-.nav__wrapper--list-item:last-of-type a:hover {
+.wrapper__list-item:last-of-type a:hover {
   border: #f5a623 solid 1px;
   color: #f5a623;
 }
 
-.nav__wrapper--link {
+.wrapper__link {
   text-align: center;
   display: inline-block;
   margin-top: 50px;
@@ -482,32 +368,22 @@ main {
   float: left;
   text-transform: uppercase;
 }
-@media only screen and (max-width: 400px) {
-  .nav__wrapper--link {
-    font-size: 36px;
-  }
-}
-@media only screen and (min-width: 401px) and (max-width: 700px) {
-  .nav__wrapper--link {
-    font-size: 36px;
-  }
-}
 @media only screen and (min-width: 701px) and (max-width: 1200px) {
-  .nav__wrapper--link {
+  .wrapper__link {
     font-size: 36px;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .nav__wrapper--link {
+  .wrapper__link {
     font-size: 16px;
   }
 }
-.nav__wrapper--link:hover {
+.wrapper__link:hover {
   border-bottom: #f5f6fa solid 1px;
   border-radius: 0;
 }
 
-.icona {
+.navigation__icon {
   display: none;
   position: fixed;
   top: 0;
@@ -517,7 +393,7 @@ main {
   background-color: #323d88;
 }
 
-.ico {
+.navigation__icon-elements {
   background: transparent;
   width: 45px;
   height: 45px;
@@ -527,7 +403,7 @@ main {
   position: relative;
 }
 
-#ico1 {
+#icon-element-1 {
   display: block;
   background: #fff;
   width: 60px;
@@ -535,7 +411,7 @@ main {
   transition: transform .3s;
 }
 
-#ico2 {
+#icon-element-2 {
   display: block;
   background: #fff;
   width: 40px;
@@ -543,7 +419,7 @@ main {
   margin-top: 8px;
 }
 
-#ico3 {
+#icon-element-3 {
   display: block;
   background: #fff;
   width: 60px;
@@ -571,74 +447,104 @@ main {
 }
 
 @media screen and (max-width: 1200px) {
-  .nav__wrapper--list {
+  .wrapper__list {
     display: none;
     padding-top: 38px;
   }
 
-  .nav__wrapper--list-item {
+  .wrapper__list-item {
     float: none;
   }
 
-  .icona {
+  .navigation__icon {
     display: block;
   }
 
-  .nav__wrapper--list.responsive {
+  .wrapper__list.responsive {
     display: block;
   }
 }
-@media (min-width: 1200px) {
-  .about__skills--type1 {
-    box-sizing: border-box;
-    width: 100%;
-    float: left;
-    padding-left: 0.41667%;
-    padding-right: 0.41667%;
-  }
-  .about__skills--type1 .about__column--type1 {
-    box-sizing: border-box;
-    width: 33.33333%;
-    float: left;
-    padding-left: 0.41667%;
-    padding-right: 0.41667%;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
+.landing-page {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
 
-  .about__skills--type2 {
-    box-sizing: border-box;
-    width: 100%;
-    float: left;
-    padding-left: 0.41667%;
-    padding-right: 0.41667%;
-  }
-  .about__skills--type2 .about__column--type2 {
-    box-sizing: border-box;
-    width: 50%;
-    float: left;
-    padding-left: 0.41667%;
-    padding-right: 0.41667%;
-    padding-left: 100px;
-    padding-right: 100px;
+.landing-page__color--opacity {
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  z-index: 3;
+  background-color: #000365;
+  background-image: linear-gradient(#000365, #006ffc);
+  opacity: 0.6;
+}
+
+.landing-page__video {
+  top: 0;
+  z-index: 0;
+  position: relative;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+@media only screen and (min-width: 701px) and (max-width: 1200px) {
+  .landing-page__video {
+    height: 120vh;
   }
 }
-@media (min-width: 1200px) {
-  .pricing__wrapper {
-    box-sizing: border-box;
-    width: 100%;
-    float: left;
-    padding-left: 0.83333%;
-    padding-right: 0.83333%;
-  }
-  .pricing__wrapper .pricing__column {
-    box-sizing: border-box;
-    width: 50%;
-    float: left;
-    padding-left: 0.83333%;
-    padding-right: 0.83333%;
+@media only screen and (min-width: 1200px) {
+  .landing-page__video {
+    height: 60vw;
   }
 }
+
+.landing-page__video:after {
+  content: "";
+  display: block;
+  width: 100%;
+}
+
+.landing-page__text {
+  font-family: "Gotham-Book";
+  font-weight: 100;
+  position: absolute;
+  z-index: 4;
+  color: #f5f6fa;
+}
+
+@media only screen and (min-width: 701px) and (max-width: 1200px) {
+  .landing-page__text--title {
+    margin: 39vh 17vw;
+    font-size: 100px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .landing-page__text--title {
+    margin: 39vh 31vw;
+    font-size: 72px;
+  }
+}
+
+.landing-page__text--subtitle {
+  opacity: .8;
+}
+@media only screen and (min-width: 701px) and (max-width: 1200px) {
+  .landing-page__text--subtitle {
+    margin: 48vh 8vw;
+    font-size: 42px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .landing-page__text--subtitle {
+    margin: 55vh 27vw;
+    font-size: 28px;
+  }
+}
+
 @font-face {
   font-family: "Gotham-Bold";
   src: url("../fonts/Gotham-Bold.otf") format("opentype");
@@ -651,113 +557,32 @@ main {
   font-family: "Gotham-Black";
   src: url("../fonts/Gotham-Black.otf") format("opentype");
 }
-.landing__text {
-  font-family: "Gotham-Book";
-  font-weight: 100;
-  position: absolute;
-  z-index: 4;
-  color: #f5f6fa;
-}
-
-@media only screen and (max-width: 400px) {
-  .landing__text--title {
-    margin: 39vh 17vw;
-    font-size: 100px;
-  }
-}
-@media only screen and (min-width: 401px) and (max-width: 700px) {
-  .landing__text--title {
-    margin: 39vh 17vw;
-    font-size: 100px;
-  }
-}
-@media only screen and (min-width: 701px) and (max-width: 1200px) {
-  .landing__text--title {
-    margin: 39vh 17vw;
-    font-size: 100px;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .landing__text--title {
-    margin: 39vh 31vw;
-    font-size: 72px;
-  }
-}
-
-.landing__text--subtitle {
-  opacity: .8;
-}
-@media only screen and (max-width: 400px) {
-  .landing__text--subtitle {
-    margin: 48vh 8vw;
-    font-size: 42px;
-  }
-}
-@media only screen and (min-width: 401px) and (max-width: 700px) {
-  .landing__text--subtitle {
-    margin: 48vh 8vw;
-    font-size: 42px;
-  }
-}
-@media only screen and (min-width: 701px) and (max-width: 1200px) {
-  .landing__text--subtitle {
-    margin: 48vh 8vw;
-    font-size: 42px;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .landing__text--subtitle {
-    margin: 55vh 27vw;
-    font-size: 28px;
-  }
-}
-
-.about__title, .team__title, .join-us__title {
+.section__title {
   font-family: "Gotham-Bold";
 }
-@media only screen and (max-width: 400px) {
-  .about__title, .team__title, .join-us__title {
-    font-size: 90px;
-  }
-}
-@media only screen and (min-width: 401px) and (max-width: 700px) {
-  .about__title, .team__title, .join-us__title {
-    font-size: 90px;
-  }
-}
 @media only screen and (min-width: 701px) and (max-width: 1200px) {
-  .about__title, .team__title, .join-us__title {
+  .section__title {
     font-size: 90px;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .about__title, .team__title, .join-us__title {
+  .section__title {
     font-size: 64px;
   }
 }
 
-.about__subtitle, .team__subtitle, .join-us__subtitle {
+.section__subtitle {
   font-family: "Gotham-Book";
   opacity: .5;
   padding-bottom: 20px;
 }
-@media only screen and (max-width: 400px) {
-  .about__subtitle, .team__subtitle, .join-us__subtitle {
-    font-size: 36px;
-  }
-}
-@media only screen and (min-width: 401px) and (max-width: 700px) {
-  .about__subtitle, .team__subtitle, .join-us__subtitle {
-    font-size: 36px;
-  }
-}
 @media only screen and (min-width: 701px) and (max-width: 1200px) {
-  .about__subtitle, .team__subtitle, .join-us__subtitle {
+  .section__subtitle {
     font-size: 36px;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .about__subtitle, .team__subtitle, .join-us__subtitle {
+  .section__subtitle {
     font-size: 24px;
   }
 }
@@ -768,16 +593,6 @@ main {
   color: #333333;
   width: 100%;
   line-height: 1.2;
-}
-@media only screen and (max-width: 400px) {
-  .skills__title {
-    font-size: 54px;
-  }
-}
-@media only screen and (min-width: 401px) and (max-width: 700px) {
-  .skills__title {
-    font-size: 54px;
-  }
 }
 @media only screen and (min-width: 701px) and (max-width: 1200px) {
   .skills__title {
@@ -796,16 +611,6 @@ main {
   line-height: 1.48;
   color: #8f8f8f;
 }
-@media only screen and (max-width: 400px) {
-  .skills__description {
-    font-size: 14px;
-  }
-}
-@media only screen and (min-width: 401px) and (max-width: 700px) {
-  .skills__description {
-    font-size: 14px;
-  }
-}
 @media only screen and (min-width: 701px) and (max-width: 1200px) {
   .skills__description {
     font-size: 14px;
@@ -821,16 +626,6 @@ main {
   font-family: "Gotham-Book";
   padding: 20px;
   color: #f5f6fa;
-}
-@media only screen and (max-width: 400px) {
-  .pricing__title {
-    font-size: 90px;
-  }
-}
-@media only screen and (min-width: 401px) and (max-width: 700px) {
-  .pricing__title {
-    font-size: 90px;
-  }
 }
 @media only screen and (min-width: 701px) and (max-width: 1200px) {
   .pricing__title {
@@ -852,16 +647,6 @@ main {
   max-width: 80%;
   margin-left: auto;
   margin-right: auto;
-}
-@media only screen and (max-width: 400px) {
-  .pricing__subtitle {
-    font-size: 36px;
-  }
-}
-@media only screen and (min-width: 401px) and (max-width: 700px) {
-  .pricing__subtitle {
-    font-size: 36px;
-  }
 }
 @media only screen and (min-width: 701px) and (max-width: 1200px) {
   .pricing__subtitle {
@@ -907,16 +692,6 @@ main {
   margin-bottom: 20px;
   margin-top: 50px;
 }
-@media only screen and (max-width: 400px) {
-  .article__title {
-    font-size: 42px;
-  }
-}
-@media only screen and (min-width: 401px) and (max-width: 700px) {
-  .article__title {
-    font-size: 42px;
-  }
-}
 @media only screen and (min-width: 701px) and (max-width: 1200px) {
   .article__title {
     font-size: 42px;
@@ -952,7 +727,7 @@ main {
   }
 }
 
-.article__list--item {
+.article__list-item {
   margin: 0;
   display: block;
   margin-top: 50px;
@@ -979,19 +754,7 @@ main {
   z-index: 10;
   position: absolute;
   margin: 0 auto;
-  width: 35vh;
-}
-@media only screen and (max-width: 400px) {
-  .video__controls {
-    top: 130vw;
-    left: 17vw;
-  }
-}
-@media only screen and (min-width: 401px) and (max-width: 700px) {
-  .video__controls {
-    top: 130vw;
-    left: 17vw;
-  }
+  width: 40vh;
 }
 @media only screen and (min-width: 701px) and (max-width: 1200px) {
   .video__controls {
@@ -1002,7 +765,19 @@ main {
 @media only screen and (min-width: 1200px) {
   .video__controls {
     top: 35vw;
-    left: 41vw;
+    left: 40vw;
+  }
+}
+
+@media only screen and (min-width: 701px) and (max-width: 1200px) {
+  .video__controls--play {
+    height: 2.5vh;
+    padding-right: 14px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .video__controls--play {
+    padding-right: 14px;
   }
 }
 
@@ -1010,19 +785,8 @@ main {
   font-family: "Gotham-Bold";
   text-transform: uppercase;
   letter-spacing: 0.4vh;
-  padding: 2.5vh 3.5vh;
-}
-@media only screen and (max-width: 400px) {
-  .video__controls--button, .article__button {
-    border-radius: 80px;
-    font-size: 20px;
-  }
-}
-@media only screen and (min-width: 401px) and (max-width: 700px) {
-  .video__controls--button, .article__button {
-    border-radius: 80px;
-    font-size: 20px;
-  }
+  padding: 3vh 3.5vh;
+  cursor: pointer;
 }
 @media only screen and (min-width: 701px) and (max-width: 1200px) {
   .video__controls--button, .article__button {
@@ -1037,81 +801,51 @@ main {
   }
 }
 
-.button__navy {
+.button--navy {
   border: none;
   background-color: #11294b;
   color: #f5f6fa;
-  cursor: pointer;
 }
-.button__navy:hover {
+.button--navy:hover {
   background-color: #09182d;
   transition: 0.2s;
 }
 
-.button__white {
+.button--white {
   background-color: transparent;
   color: #045dcd;
-  cursor: pointer;
 }
 @media only screen and (min-width: 701px) and (max-width: 1200px) {
-  .button__white {
+  .button--white {
     border: solid 4px #daebf9;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .button__white {
+  .button--white {
     border: solid 1px #daebf9;
   }
 }
-.button__white:hover {
+.button--white:hover {
   background-color: #daebf9;
   transition: 0.2s;
 }
 
-.button__white--position {
+.button--position {
   position: relative;
 }
 @media only screen and (min-width: 701px) and (max-width: 1200px) {
-  .button__white--position {
+  .button--position {
     top: 150px;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .button__white--position {
+  .button--position {
     float: left;
     top: 50px;
   }
 }
 
-@media only screen and (max-width: 400px) {
-  .video__controls--play {
-    height: 2.5vh;
-    padding-right: 14px;
-  }
-}
-@media only screen and (min-width: 401px) and (max-width: 700px) {
-  .video__controls--play {
-    height: 2.5vh;
-    padding-right: 14px;
-  }
-}
-@media only screen and (min-width: 701px) and (max-width: 1200px) {
-  .video__controls--play {
-    height: 2.5vh;
-    padding-right: 14px;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .video__controls--play {
-    padding-right: 14px;
-  }
-}
-
-/*
-.video__controls--button::before {
-    content: url('img/icons/play_icon.svg');
-}  */
-#button__scrolly {
+.landing-page__button--scroll {
   cursor: pointer;
   z-index: 10;
   top: 90vh;
@@ -1119,44 +853,15 @@ main {
   background-color: transparent;
   border: none;
 }
-@media only screen and (max-width: 400px) {
-  #button__scrolly {
-    left: 45vw;
-  }
-}
-@media only screen and (min-width: 401px) and (max-width: 700px) {
-  #button__scrolly {
-    left: 45vw;
-  }
-}
 @media only screen and (min-width: 701px) and (max-width: 1200px) {
-  #button__scrolly {
+  .landing-page__button--scroll {
+    height: 60px;
     left: 45vw;
   }
 }
 @media only screen and (min-width: 1200px) {
-  #button__scrolly {
-    left: 48vw;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  .landing__bg--scroll {
-    height: 60px;
-  }
-}
-@media only screen and (min-width: 401px) and (max-width: 700px) {
-  .landing__bg--scroll {
-    height: 60px;
-  }
-}
-@media only screen and (min-width: 701px) and (max-width: 1200px) {
-  .landing__bg--scroll {
-    height: 60px;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .landing__bg--scroll {
+  .landing-page__button--scroll {
     height: 30px;
+    left: 48vw;
   }
 }

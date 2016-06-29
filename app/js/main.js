@@ -1,16 +1,16 @@
 $(document).ready(function(){
-  $(".ico").click(function(){
-    $("#ico1").toggleClass("act");
-    $("#ico2").toggleClass("act2");
-    $("#ico3").toggleClass("act3");
+  $(".navigation__icon-elements").click(function(){
+    $("#icon-element-1").toggleClass("act");
+    $("#icon-element-2").toggleClass("act2");
+    $("#icon-element-3").toggleClass("act3");
   });
 });
 
 
 $(document).ready(function(){
-  $(".icona").on("click", function(e){
+  $(".navigation__icon").on("click", function(e){
     e.preventDefault();
-    $(".nav__wrapper--list").toggleClass("responsive");
+    $(".wrapper__list").toggleClass("responsive");
   });
 });
 
@@ -31,17 +31,7 @@ $(document).ready(function(){
       video.pause();
    }
 }
-/* Volume/Mute - not sure if needed
 
-function setVolume() {
-   var volume = document.getElementById("volume");
-   video.volume = volume.value;
-}
-
-function toggleMute() {
-   video.muted = !video.muted;
-}
-*/
 
 $("#button__scrolly").click(function() {
     $('html, body').animate({

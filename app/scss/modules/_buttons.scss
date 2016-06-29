@@ -2,80 +2,60 @@
   z-index: 10;
   position: absolute;
   margin:0 auto;
-  width:35vh;
-  @include respond-to(small) { top:130vw; left:17vw; }
-  @include respond-to(medium) { top:130vw; left:17vw; }
-  @include respond-to(large) { top:130vw; left:17vw; }
-  @include respond-to(desktop) { top:35vw; left:41vw; }
+  width:40vh;
+  @include respond-to(iphone6) { top:130vw; left:17vw; }
+  @include respond-to(desktop) { top:35vw; left:40vw; }
+}
+
+.video__controls--play{
+  @include respond-to(iphone6) { height:2.5vh; padding-right: 14px; }
+  @include respond-to(desktop) { padding-right: 14px; }
 }
 
 .video__controls--button, .article__button{
   font-family: "Gotham-Bold";
   text-transform: uppercase;
   letter-spacing: 0.4vh;
-  padding: 2.5vh 3.5vh;
-  @include respond-to(small) { border-radius: 80px; font-size: 20px;}
-  @include respond-to(medium) { border-radius: 80px; font-size: 20px; }
-  @include respond-to(large) { border-radius: 80px; font-size: 14px;}
+  padding: 3vh 3.5vh;
+  @include respond-to(iphone6) { border-radius: 80px; font-size: 14px;}
   @include respond-to(desktop) { border-radius: 50px; font-size: 16px; }
+  cursor: pointer;
 }
 
-.button__navy{
+.button--navy{
   border: none;
   background-color: $navy;
   color: $white;
-  cursor: pointer;
   &:hover{
     background-color: $navy-dark;
     transition: 0.2s;
   }
 }
 
-.button__white{
-  @include respond-to(large) { border: solid 4px $blue-pricing; }
+.button--white{
+  @include respond-to(iphone6) { border: solid 4px $blue-pricing; }
   @include respond-to(desktop) { border: solid 1px $blue-pricing; }
   background-color: transparent;
   color: $blue;
-  cursor: pointer;
   &:hover{
     background-color: $blue-pricing;
     transition: 0.2s;
   }
 }
 
-.button__white--position{
+.button--position{
   position: relative;
-  @include respond-to(large) { top:150px; };
+  @include respond-to(iphone6) { top:150px; };
   @include respond-to(desktop) { float: left;top:50px; };
 }
 
-.video__controls--play{
-  @include respond-to(small) { height:2.5vh; padding-right: 14px;}
-  @include respond-to(medium) { height:2.5vh; padding-right: 14px;}
-  @include respond-to(large) { height:2.5vh; padding-right: 14px; }
-  @include respond-to(desktop) { padding-right: 14px; }
-}
-
-/*
-.video__controls--button::before {
-    content: url('img/icons/play_icon.svg');
-}  */
-
-#button__scrolly{
-  @include respond-to(small) { left:45vw;}
-  @include respond-to(medium) { left:45vw; }
-  @include respond-to(large) { left:45vw; }
-  @include respond-to(desktop) { left:48vw; }
+.landing-page__button--scroll{
+  @include respond-to(iphone6) { height: 60px;left:45vw; }
+  @include respond-to(desktop) { height: 30px;left:48vw; }
   cursor: pointer;
   z-index: 10;
   top:90vh;
   position: absolute;
   background-color: transparent;
   border: none;
-}
-.landing__bg--scroll{
-  @include respond-to(small) { height:60px;}
-  @include respond-to(medium) { height: 60px; }
-  @include respond-to(large) { height: 60px; }
-  @include respond-to(desktop) { height: 30px; }
 }

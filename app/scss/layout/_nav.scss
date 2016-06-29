@@ -1,4 +1,4 @@
-.landing__nav {
+.navigation {
   position: absolute;
   z-index: 100;
   width: 100%;
@@ -9,32 +9,26 @@
   width: 95vw;
 }
 
-.landing__nav--link {
+.navigation__item--logo {
   text-decoration: none;
   list-style: none;
   color: $white;
 }
 
-.landing__nav--logo {
+.logo {
   margin-top:1.7vh;
   margin-left: 3vw;
   z-index: 10;
   font-family: "Gotham-Bold";
-  @include respond-to(small) { font-size: 64px;position: fixed;}
-  @include respond-to(medium) { font-size: 64px;position: fixed;}
-  @include respond-to(large) { font-size: 64px;position: fixed;}
+  @include respond-to(iphone6) { font-size: 64px;position: fixed;}
   @include respond-to(desktop) { font-size: 64px;position: absolute;}
   float: left;
   left: 3vw;
   color: $white;
 }
 
-.nav__wrapper {
-  @include respond-to(small) { position: fixed;width: 100vw;
-  margin: 100px 0 0 0;background-color: $navy-dark;}
-  @include respond-to(medium) { position: fixed;width: 100vw;
-  margin: 100px 0 0 0;background-color: $navy-dark;}
-  @include respond-to(large) { position: fixed;width: 100vw;
+.navigation__wrapper {
+  @include respond-to(iphone6) { position: fixed;width: 100vw;
   margin: 100px 0 0 0;background-color: $navy-dark;}
   @include respond-to(desktop) { position: absolute; }
   top:0;
@@ -43,25 +37,21 @@
   transition: all 350ms ease-out;
 }
 
-.nav__wrapper--list {
-  @include respond-to(small) { padding: 40vw;}
-  @include respond-to(medium) { padding: 40vw;}
-  @include respond-to(large) { padding: 40vw; }
+.wrapper__list {
+  @include respond-to(iphone6) { padding: 40vw; }
   @include respond-to(desktop) { padding: 2vw; }
   list-style: none;
   text-transform: capitalize;
   letter-spacing: 2px;
 }
 
-.nav__wrapper--list-item {
+.wrapper__list-item {
   float: left;
   display: block;
 }
 
-.nav__wrapper--list-item:last-of-type a {
-  @include respond-to(small) { font-size: 36px; color:$yellow; }
-  @include respond-to(medium) { font-size: 36px; color:$yellow; }
-  @include respond-to(large) { font-size: 36px; color:$yellow; }
+.wrapper__list-item:last-of-type a {
+  @include respond-to(iphone6) { font-size: 36px; color:$yellow; }
   @include respond-to(desktop) { font-size: 14px;border: solid 1px white;padding: 10px; }
   border-radius: 20px;
   &:hover{
@@ -70,7 +60,7 @@
   }
 }
 
-.nav__wrapper--link {
+.wrapper__link {
   text-align: center;
   display: inline-block;
   margin-top:50px;
@@ -80,9 +70,7 @@
   margin-right: 1.5vw;
   font-family: "Gotham-Book";
   font-weight: 600;
-  @include respond-to(small) { font-size: 36px;}
-  @include respond-to(medium) { font-size: 36px; }
-  @include respond-to(large) { font-size: 36px; }
+  @include respond-to(iphone6) { font-size: 36px; }
   @include respond-to(desktop) { font-size: 16px; }
   float: left;
   text-transform:uppercase;
@@ -92,7 +80,7 @@
   }
 }
 
-.icona {
+.navigation__icon {
   display: none;
   position: fixed;
   top: 0;
@@ -102,19 +90,17 @@
   background-color: $nav;
 }
 
-.ico {
+.navigation__icon-elements {
   background: transparent;
   width: 45px;
   height: 45px;
 }
 
-
 #menu {
   position: relative;
 }
 
-
-#ico1 {
+#icon-element-1 {
   display: block;
   background: #fff;
   width: 60px;
@@ -122,7 +108,7 @@
   transition: transform .3s;
 }
 
-#ico2 {
+#icon-element-2 {
   display: block;
   background: #fff;
   width: 40px;
@@ -130,7 +116,7 @@
   margin-top: 8px;
 }
 
-#ico3 {
+#icon-element-3 {
   display: block;
   background: #fff;
   width: 60px;
@@ -158,20 +144,20 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .nav__wrapper--list {
+  .wrapper__list {
     display: none;
     padding-top: 38px;
   }
 
-  .nav__wrapper--list-item {
+  .wrapper__list-item {
     float: none;
   }
 
-  .icona {
+  .navigation__icon {
     display: block;
   }
 
-  .nav__wrapper--list.responsive {
+  .wrapper__list.responsive {
     display: block;
   }
 }
