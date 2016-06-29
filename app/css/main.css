@@ -109,6 +109,41 @@ main {
   margin-bottom: 50px;
 }
 
+@media (min-width: 1200px) {
+  .about__skills--type1 {
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    padding-left: 0.41667%;
+    padding-right: 0.41667%;
+  }
+  .about__skills--type1 .about__column--type1 {
+    box-sizing: border-box;
+    width: 33.33333%;
+    float: left;
+    padding-left: 0.41667%;
+    padding-right: 0.41667%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .about__skills--type2 {
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    padding-left: 0.41667%;
+    padding-right: 0.41667%;
+  }
+  .about__skills--type2 .about__column--type2 {
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+    padding-left: 0.41667%;
+    padding-right: 0.41667%;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
 .skills__icon {
   margin-bottom: 20px;
 }
@@ -189,24 +224,18 @@ main {
 .pricing {
   text-align: center;
   background-color: #045dcd;
-  position: relative;
 }
 
 .pricing__bg {
   background-color: #daebf9;
   height: 200px;
-  position: relative;
-  z-index: 0;
-  top: 200px;
+  width: 100%;
+  margin-top: 200px;
+  position: absolute;
+  z-index: 7;
 }
 
-.pricing__wrapper {
-  padding-top: 60px;
-  z-index: 5;
-  height: 500px;
-}
-
-.pricing__wrapper--column {
+.pricing__column {
   padding-left: 0;
   padding-right: 0;
 }
@@ -217,7 +246,7 @@ main {
   display: inline-block;
   background-color: white;
   height: 450px;
-  width: 300px;
+  width: 400px;
 }
 
 .wrapper__divider--horizontal {
@@ -238,8 +267,23 @@ main {
   margin: 0 0;
 }
 
+@media (min-width: 1200px) {
+  .pricing__wrapper {
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+  .pricing__wrapper .pricing__column {
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+}
 .join-us {
-  position: relative;
   text-align: center;
   max-width: 80%;
   margin-left: auto;
@@ -249,6 +293,29 @@ main {
   content: " ";
   display: block;
   clear: both;
+}
+
+@media (min-width: 1200px) {
+  .article__main {
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+    padding-left: 0.41667%;
+    padding-right: 0.41667%;
+    padding-right: 5.41667%;
+  }
+
+  .article__aside {
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+    padding-left: 0.41667%;
+    padding-right: 0.41667%;
+    padding-left: 5.41667%;
+  }
+}
+.fa {
+  margin-left: 50px;
 }
 
 .landing__nav {
@@ -564,9 +631,9 @@ main {
     padding-left: 0.83333%;
     padding-right: 0.83333%;
   }
-  .pricing__wrapper .pricing__wrapper--column {
+  .pricing__wrapper .pricing__column {
     box-sizing: border-box;
-    width: 25%;
+    width: 50%;
     float: left;
     padding-left: 0.83333%;
     padding-right: 0.83333%;
@@ -634,7 +701,7 @@ main {
 }
 @media only screen and (min-width: 701px) and (max-width: 1200px) {
   .landing__text--subtitle {
-    margin: 55vh 27vw;
+    margin: 48vh 8vw;
     font-size: 42px;
   }
 }
@@ -671,7 +738,7 @@ main {
 
 .about__subtitle, .team__subtitle, .join-us__subtitle {
   font-family: "Gotham-Book";
-  opacity: .7;
+  opacity: .5;
   padding-bottom: 20px;
 }
 @media only screen and (max-width: 400px) {
@@ -835,72 +902,185 @@ main {
   font-weight: 100;
 }
 
+.article__title {
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+@media only screen and (max-width: 400px) {
+  .article__title {
+    font-size: 42px;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 700px) {
+  .article__title {
+    font-size: 42px;
+  }
+}
+@media only screen and (min-width: 701px) and (max-width: 1200px) {
+  .article__title {
+    font-size: 42px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .article__title {
+    font-size: 28px;
+  }
+}
+
+.article__text {
+  font-family: "Gotham-Book";
+  font-weight: 100;
+  color: #333333;
+  width: 100%;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.article__text--big {
+  font-size: 20px;
+  opacity: 0.5;
+  padding-bottom: 30px;
+}
+
+.article__list {
+  padding: 0;
+}
+@media only screen and (min-width: 701px) and (max-width: 1200px) {
+  .article__list {
+    margin-top: 350px;
+  }
+}
+
+.article__list--item {
+  margin: 0;
+  display: block;
+  margin-top: 50px;
+}
+
+.item__title {
+  margin-bottom: 30px;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #045dcd;
+  font-weight: bold;
+  cursor: pointer;
+}
+.item__title:hover {
+  text-decoration: underline;
+}
+
+.item__description {
+  opacity: 0.5;
+  font-size: 14px;
+}
+
 .video__controls {
   z-index: 10;
   position: absolute;
   margin: 0 auto;
-  width: 40vh;
+  width: 35vh;
 }
 @media only screen and (max-width: 400px) {
   .video__controls {
     top: 130vw;
-    left: 14vw;
+    left: 17vw;
   }
 }
 @media only screen and (min-width: 401px) and (max-width: 700px) {
   .video__controls {
     top: 130vw;
-    left: 14vw;
+    left: 17vw;
   }
 }
 @media only screen and (min-width: 701px) and (max-width: 1200px) {
   .video__controls {
     top: 130vw;
-    left: 14vw;
+    left: 17vw;
   }
 }
 @media only screen and (min-width: 1200px) {
   .video__controls {
     top: 35vw;
-    left: 39.5vw;
+    left: 41vw;
   }
 }
 
-.video__controls--button {
+.video__controls--button, .article__button {
   font-family: "Gotham-Bold";
   text-transform: uppercase;
-  font-size: 2.5vh;
   letter-spacing: 0.4vh;
-  padding: 3vh;
+  padding: 2.5vh 3.5vh;
+}
+@media only screen and (max-width: 400px) {
+  .video__controls--button, .article__button {
+    border-radius: 80px;
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 700px) {
+  .video__controls--button, .article__button {
+    border-radius: 80px;
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 701px) and (max-width: 1200px) {
+  .video__controls--button, .article__button {
+    border-radius: 80px;
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .video__controls--button, .article__button {
+    border-radius: 50px;
+    font-size: 16px;
+  }
+}
+
+.button__navy {
   border: none;
   background-color: #11294b;
   color: #f5f6fa;
   cursor: pointer;
 }
-@media only screen and (max-width: 400px) {
-  .video__controls--button {
-    border-radius: 80px;
-  }
+.button__navy:hover {
+  background-color: #09182d;
+  transition: 0.2s;
 }
-@media only screen and (min-width: 401px) and (max-width: 700px) {
-  .video__controls--button {
-    border-radius: 80px;
-  }
+
+.button__white {
+  background-color: transparent;
+  color: #045dcd;
+  cursor: pointer;
 }
 @media only screen and (min-width: 701px) and (max-width: 1200px) {
-  .video__controls--button {
-    border-radius: 80px;
+  .button__white {
+    border: solid 4px #daebf9;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .video__controls--button {
-    border-radius: 50px;
+  .button__white {
+    border: solid 1px #daebf9;
   }
 }
-.video__controls--button:hover {
-  background-color: #09182d;
+.button__white:hover {
+  background-color: #daebf9;
   transition: 0.2s;
-  border: 1px solid #f5f6fa;
+}
+
+.button__white--position {
+  position: relative;
+}
+@media only screen and (min-width: 701px) and (max-width: 1200px) {
+  .button__white--position {
+    top: 150px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .button__white--position {
+    float: left;
+    top: 50px;
+  }
 }
 
 @media only screen and (max-width: 400px) {
@@ -934,49 +1114,49 @@ main {
 #button__scrolly {
   cursor: pointer;
   z-index: 10;
-  top: 88vh;
+  top: 90vh;
   position: absolute;
   background-color: transparent;
   border: none;
 }
 @media only screen and (max-width: 400px) {
   #button__scrolly {
-    left: 44vw;
+    left: 45vw;
   }
 }
 @media only screen and (min-width: 401px) and (max-width: 700px) {
   #button__scrolly {
-    left: 44vw;
+    left: 45vw;
   }
 }
 @media only screen and (min-width: 701px) and (max-width: 1200px) {
   #button__scrolly {
-    left: 44vw;
+    left: 45vw;
   }
 }
 @media only screen and (min-width: 1200px) {
   #button__scrolly {
-    left: 47.5vw;
+    left: 48vw;
   }
 }
 
 @media only screen and (max-width: 400px) {
   .landing__bg--scroll {
-    height: 100px;
+    height: 60px;
   }
 }
 @media only screen and (min-width: 401px) and (max-width: 700px) {
   .landing__bg--scroll {
-    height: 100px;
+    height: 60px;
   }
 }
 @media only screen and (min-width: 701px) and (max-width: 1200px) {
   .landing__bg--scroll {
-    height: 100px;
+    height: 60px;
   }
 }
 @media only screen and (min-width: 1200px) {
   .landing__bg--scroll {
-    height: 50px;
+    height: 30px;
   }
 }

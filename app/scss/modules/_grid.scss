@@ -33,8 +33,8 @@ gutter-position:inside,
     @include layout(12);
     .pricing__wrapper{
         @include span(12);
-        .pricing__wrapper--column{
-          @include span(3 at 4 );
+        .pricing__column{
+          @include span(6 at 12 );
         }
         }
     };

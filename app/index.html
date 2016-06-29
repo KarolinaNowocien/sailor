@@ -5,6 +5,8 @@
 	<title>Sailor-home</title>
 	<meta charset="utf-8">
   <meta name="Keywords" content="Sailor, sailing, pawel solyga, konrad kolasa, " />
+	<!--font-awesome-->
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
   <!--css-->
 	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
@@ -13,13 +15,11 @@
 
 </head>
 
-<body>
-
-
+<body id="top">
 
 	<nav class="landing__nav">
 
-	      <a class="landing__nav--link" href="index.html">
+	      <a class="landing__nav--link" href="#top">
 	        <div class="landing__nav--logo" id="logo">Sailor.</div>
 	      </a>
 
@@ -71,10 +71,10 @@
 			<button id="mute" onclick="toggleMute()">Mute</button>
 		-->
 			<div class="video__controls" id="controls">
-			   <button class="video__controls--button" id="playpause" title="play" onclick="togglePlayPause()"><img class="video__controls--play" src="img/icons/play_icon.svg"><span>Watch Video</span></button>
+			   <a class="video__controls--button button__navy" id="playpause" title="play" onclick="togglePlayPause()"><img class="video__controls--play" src="img/icons/play_icon.svg">Watch Video</a>
 			</div>
 			<div class="landing__bg--button">
-			  <button id="button__scrolly"><img class="landing__bg--scroll" src="img/icons/scroll_icon.svg"></button>
+			  <a id="button__scrolly"><img class="landing__bg--scroll" src="img/icons/scroll_icon.svg"></a>
 			</div>
     </section>
 
@@ -137,10 +137,9 @@
 <section id="pricing" class="pricing">
 		<h1 class="pricing__title">Pricing</h1>
 		<h5 class="pricing__subtitle">We’re sure that balance of quality to price is really high</h5>
-
 	<div class="pricing__wrapper">
-		<div class="pricing__wrapper--column">
-			<div class="wrapper__inner">
+		<div class="pricing__column">
+			<div class="wrapper__inner pricing__inner--left">
 				<h3 class="wrapper__text wrapper__text--header">Basic</h3>
 				<p class="wrapper__text wrapper__text--subtitle">A simple and powerful way to get things done</p>
 				<hr class="wrapper__divider--horizontal">
@@ -148,8 +147,8 @@
 				<h2 class="wrapper__text wrapper__text--price">$10</h2>
 			</div>
 		</div>
-		<div class="pricing__wrapper--column">
-			<div class="wrapper__inner">
+		<div class="pricing__column">
+			<div class="wrapper__inner  pricing__inner--right">
 				<h3 class="wrapper__text wrapper__text--header">Total</h3>
 				<p class="wrapper__text wrapper__text--subtitle">The best way to have everything for oneself</p>
 				<hr class="wrapper__divider--horizontal">
@@ -165,8 +164,9 @@
 	<hr class="main__divider">
 	<h1 class="join-us__title">Join our team</h1>
 	<h5 class="join-us__subtitle">Interesed in work with us? Check our job list and see if you’re a match</h5>
-	<div class="join-us__main">
-	<p class="join-us__text">
+	<div class="article__main">
+		<h3 class="article__text article__title">Available positions</h3>
+	<p class="article__text article__text--big">
 		Sailor is located in the Lower Silesia
 		region in the city Wroclaw, Poland. We
 		have an amazing office space in
@@ -174,22 +174,22 @@
 		of awesome people. We’re absolutely
 		sure that you’ll love this place and us!
 	</p>
-	<a class="join-us__button">VIEW ALL JOBS</a>
+	<a class="article__button button__white button__white--position">VIEW ALL JOBS</a>
 </div>
-	<div class="join-us__aside">
-		<ul class="join-us__list">
-			<li class="join-us__list--item">PRODUCT MANAGER
-Wroclaw - quis volutpat ipsum. Aenean iaculis magna
+	<div class="article__aside">
+		<ul class="article__list">
+			<li class="article__list--item"><h4 class="article__text item__title"><a>Product manager<i class="fa fa-chevron-right" aria-hidden="true"></i></a></h4>
+<p class="article__text item__description">Wroclaw - quis volutpat ipsum. Aenean iaculis magna
 nec ex posuere feugiat. Proin pretium lacus pharetra
-orci viverra consequat</li>
-			<li class="join-us__list--item">SENIOR FRONT-END DEVELOPER
-Wroclaw - quis volutpat ipsum. Aenean iaculis magna
+orci viverra consequat</p></li>
+			<li class="article__list--item"><h4 class="article__text item__title"><a>Senior front-end developer<i class="fa fa-chevron-right" aria-hidden="true"></i></a></h4>
+<p class="article__text item__description">Wroclaw - quis volutpat ipsum. Aenean iaculis magna
 nec ex posuere feugiat. Proin pretium lacus pharetra
-orci viverra consequat</li>
-			<li class="join-us__list--item">UI/UX DESIGNER
-Wroclaw - quis volutpat ipsum. Aenean iaculis magna
+orci viverra consequat</p></li>
+			<li class="article__list--item"><h4 class="article__text item__title"><a>UI/UX designer<i class="fa fa-chevron-right" aria-hidden="true"></i></a></h4>
+<p class="article__text item__description">Wroclaw - quis volutpat ipsum. Aenean iaculis magna
 nec ex posuere feugiat. Proin pretium lacus pharetra
-orci viverra consequat</li>
+orci viverra consequat</p></li>
 		</ul>
 	</div>
 

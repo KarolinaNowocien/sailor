@@ -31,7 +31,7 @@ src: url('../fonts/Gotham-Black.otf') format('opentype');
 .landing__text--subtitle{
   @include respond-to(small) { margin: 48vh 8vw ;font-size: 42px ;}
   @include respond-to(medium) { margin: 48vh 8vw ;font-size: 42px ; }
-  @include respond-to(large) { margin: 55vh 27vw ;font-size: 42px ;  }
+  @include respond-to(large) { margin: 48vh 8vw ;font-size: 42px ; }
   @include respond-to(desktop) { margin: 55vh 27vw ;font-size: 28px ;  }
   opacity:.8;
 }
@@ -50,7 +50,7 @@ src: url('../fonts/Gotham-Black.otf') format('opentype');
   @include respond-to(large) { font-size: 36px ;  }
   @include respond-to(desktop) { font-size: 24px ;  }
   font-family: "Gotham-Book";
-  opacity:.7;
+  opacity:.5;
   padding-bottom: 20px;
 }
 
@@ -122,4 +122,56 @@ src: url('../fonts/Gotham-Black.otf') format('opentype');
   color: $blue;
   font-size: 40px;
   font-weight: 100;
+}
+
+.article__title{
+  @include respond-to(small) { font-size: 42px; }
+  @include respond-to(medium) { font-size: 42px; }
+  @include respond-to(large) {font-size: 42px; }
+  @include respond-to(desktop) {font-size: 28px; }
+  text-transform:capitalize;
+  margin-bottom:20px;
+  margin-top: 50px;
+}
+
+.article__text{
+  font-family: "Gotham-Book";
+  font-weight: 100;
+  color:$body;
+  width: 100%;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.article__text--big{
+  font-size: 20px;
+  opacity: 0.5;
+  padding-bottom: 30px;
+}
+
+.article__list{
+  padding: 0;
+  @include respond-to(large) { margin-top:350px; };
+}
+
+.article__list--item{
+  margin:0;
+  display: block;
+  margin-top:50px;
+}
+
+.item__title{
+  margin-bottom:30px;
+  font-size: 20px;
+  text-transform: uppercase;
+  color:$blue;
+  font-weight: bold;
+  cursor: pointer;
+  &:hover{
+  text-decoration:underline;
+}
+}
+.item__description{
+  opacity: 0.5;
+  font-size: 14px;
 }

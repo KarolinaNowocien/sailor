@@ -1,3 +1,16 @@
+$small:400px;
+$medium: 700px;
+$large:960px;
+$desktop:1200px;
+
+$susy: (
+columns:12,
+gutter: 1/4,
+math:fluid,
+output:float,
+gutter-position:inside,
+);
+
 main{
   text-align: center;
   overflow: hidden;
@@ -71,6 +84,24 @@ main{
   margin-bottom: 50px;
 }
 
+@include breakpoint ($desktop){
+  @include layout(24);
+  .about__skills--type1{
+      @include span(24);
+      .about__column--type1{
+        @include span(8);
+        @include pad(10px);
+      }
+      }
+  .about__skills--type2{
+      @include span(24);
+      .about__column--type2{
+        @include span(12);
+        @include pad(100px);
+      }
+      }
+  };
+
 .skills__icon{
   @include respond-to(small) { height:150px; }
   @include respond-to(medium) { height:150px; }
@@ -110,21 +141,20 @@ main{
 .pricing{
   text-align: center;
   background-color: $blue;
-  position: relative;
 }
+
 .pricing__bg{
   background-color: $blue-pricing;
   height: 200px;
-  position: relative;
-  z-index: 0;
-  top: 200px;
+  width: 100%;
+  margin-top: 200px;
+  position: absolute;;
+  z-index: 7;
 }
 .pricing__wrapper {
-  padding-top: 60px;
-  z-index: 5;
-  height:500px;
 }
-.pricing__wrapper--column{
+
+.pricing__column{
   padding-left: 0;
   padding-right: 0;
 }
@@ -135,7 +165,7 @@ main{
   display: inline-block;
   background-color: white;
   height: 450px;
-  width: 300px;
+  width: 400px;
 }
 
 .wrapper__divider--horizontal{
@@ -156,8 +186,32 @@ main{
   margin: 0 0;
 }
 
+@include breakpoint ($desktop){
+  @include layout(12);
+  .pricing__wrapper{
+      @include span(12);
+      .pricing__column{
+        @include span(6 at 12 );
+      }
+      }
+  };
+
 .join-us {
-  position: relative;
   text-align: center;
   @include container(80%);
+}
+
+@include susy-breakpoint ($desktop, 24) {
+.article__main {
+  @include span(12);
+  @include suffix(5%);
+}
+.article__aside{
+  @include span(12) ;
+  @include prefix(5%);
+}
+}
+
+.fa{
+  margin-left:50px;
 }

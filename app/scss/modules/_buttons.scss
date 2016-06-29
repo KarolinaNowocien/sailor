@@ -2,23 +2,25 @@
   z-index: 10;
   position: absolute;
   margin:0 auto;
-  width:40vh;
-  @include respond-to(small) { top:130vw; left:14vw; }
-  @include respond-to(medium) { top:130vw; left:14vw; }
-  @include respond-to(large) { top:130vw; left:14vw; }
-  @include respond-to(desktop) { top:35vw; left:39.5vw; }
+  width:35vh;
+  @include respond-to(small) { top:130vw; left:17vw; }
+  @include respond-to(medium) { top:130vw; left:17vw; }
+  @include respond-to(large) { top:130vw; left:17vw; }
+  @include respond-to(desktop) { top:35vw; left:41vw; }
 }
 
-.video__controls--button{
+.video__controls--button, .article__button{
   font-family: "Gotham-Bold";
   text-transform: uppercase;
-  font-size: 2.5vh;
   letter-spacing: 0.4vh;
-  padding: 3vh;
-  @include respond-to(small) { border-radius: 80px;}
-  @include respond-to(medium) { border-radius: 80px; }
-  @include respond-to(large) { border-radius: 80px; }
-  @include respond-to(desktop) { border-radius: 50px; }
+  padding: 2.5vh 3.5vh;
+  @include respond-to(small) { border-radius: 80px; font-size: 20px;}
+  @include respond-to(medium) { border-radius: 80px; font-size: 20px; }
+  @include respond-to(large) { border-radius: 80px; font-size: 14px;}
+  @include respond-to(desktop) { border-radius: 50px; font-size: 16px; }
+}
+
+.button__navy{
   border: none;
   background-color: $navy;
   color: $white;
@@ -26,8 +28,25 @@
   &:hover{
     background-color: $navy-dark;
     transition: 0.2s;
-    border: 1px solid $white;
   }
+}
+
+.button__white{
+  @include respond-to(large) { border: solid 4px $blue-pricing; }
+  @include respond-to(desktop) { border: solid 1px $blue-pricing; }
+  background-color: transparent;
+  color: $blue;
+  cursor: pointer;
+  &:hover{
+    background-color: $blue-pricing;
+    transition: 0.2s;
+  }
+}
+
+.button__white--position{
+  position: relative;
+  @include respond-to(large) { top:150px; };
+  @include respond-to(desktop) { float: left;top:50px; };
 }
 
 .video__controls--play{
@@ -43,20 +62,20 @@
 }  */
 
 #button__scrolly{
-  @include respond-to(small) { left:44vw;}
-  @include respond-to(medium) { left:44vw; }
-  @include respond-to(large) { left:44vw; }
-  @include respond-to(desktop) { left:47.5vw; }
+  @include respond-to(small) { left:45vw;}
+  @include respond-to(medium) { left:45vw; }
+  @include respond-to(large) { left:45vw; }
+  @include respond-to(desktop) { left:48vw; }
   cursor: pointer;
   z-index: 10;
-  top:88vh;
+  top:90vh;
   position: absolute;
   background-color: transparent;
   border: none;
 }
 .landing__bg--scroll{
-  @include respond-to(small) { height:100px;}
-  @include respond-to(medium) { height: 100px; }
-  @include respond-to(large) { height: 100px; }
-  @include respond-to(desktop) { height: 50px; }
+  @include respond-to(small) { height:60px;}
+  @include respond-to(medium) { height: 60px; }
+  @include respond-to(large) { height: 60px; }
+  @include respond-to(desktop) { height: 30px; }
 }
