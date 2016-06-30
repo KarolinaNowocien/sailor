@@ -16,12 +16,12 @@
 }
 
 .logo {
-  margin-top:1.7vh;
+  margin-top:2.5vh;
   margin-left: 3vw;
   z-index: 10;
   font-family: "Gotham-Bold";
-  @include respond-to(iphone6) { font-size: 64px;position: fixed;}
-  @include respond-to(desktop) { font-size: 64px;position: absolute;}
+  @include respond-to(iphone6) { font-size: 48px;position: fixed;}
+  @include respond-to(desktop) { font-size: 48px;position: absolute;}
   float: left;
   left: 3vw;
   color: $white;

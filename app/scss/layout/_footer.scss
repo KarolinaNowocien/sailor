@@ -10,6 +10,8 @@ $susy-6: (
 
 // Setup example grid
 .social-media__list {
+  margin-top:40px;
+  margin-bottom: 100px;
   @include container;
   @include susy-breakpoint($desktop, $susy-6) {
     @include container;
@@ -29,12 +31,13 @@ $susy-6: (
   }
 
   // Basic styling
-  padding:20px 0;
   margin: 20px 0;
   cursor: pointer;
-
 }
 
+.social-media__icon {
+  @include respond-to(iphone6) { width:80px;}
+}
 
 $susy-1: (
   columns: 1,
@@ -45,8 +48,8 @@ $susy-4: (
 
 );
 
-// Setup example grid
 .footer__data {
+  margin-bottom: 100px;
   @include container;
   @include susy-breakpoint($desktop, $susy-4) {
     @include container;
@@ -61,13 +64,113 @@ $susy-4: (
   @include susy-breakpoint($desktop, $susy-4) {
     @include span(1);
   }
-  &:hover{
-    background-color: $blue-light;
-  }
 
   // Basic styling
   padding:20px 0;
   margin: 20px 0;
-  cursor: pointer;
 
+}
+
+.footer__logo {
+  margin-top: 80px;
+  font-family: "Gotham-Bold";
+  @include respond-to(iphone6) { font-size: 64px;}
+  @include respond-to(desktop) { font-size: 48px;}
+  color: $blue-light;
+  cursor:pointer;
+}
+
+.footer__text{
+  @include respond-to(iphone6) { text-align: center; }
+  @include respond-to(desktop) { text-align: left; }
+}
+
+.footer__title{
+  font-family: "Gotham-Bold";
+  @include respond-to(iphone6) { font-size: 56px; }
+  @include respond-to(desktop) { font-size: 22px; }
+  margin-bottom: 20px;
+}
+
+.footer__text--small{
+  @include respond-to(iphone6) { font-size: 48px; }
+  @include respond-to(desktop) { font-size: 16px; }
+  opacity: 0.5;
+  line-height: 1.2;
+}
+
+.footer__link{
+  line-height: 1.8;
+  cursor: pointer;
+  &:hover{
+    text-decoration: underline;
+  }
+}
+
+.footer__newsletter {
+  margin: 0 auto;
+}
+
+.footer__label {
+  @include respond-to(iphone6) { font-size: 48px;transform: translateY(70px); }
+  @include respond-to(desktop) { font-size: 16px;transform: translateY(25px); }
+  display: block;
+  color: #e2e2e2;
+  transition: all 0.5s;
+  text-align: left;
+}
+
+.footer__input {
+  text-align: left;
+  position: relative;
+  background: transparent;
+  width: 100%;
+  border: none;
+  outline: none;
+  @include respond-to(iphone6) { padding: 32px 0; }
+  @include respond-to(desktop) { padding: 8px 0; }
+  font-size: 16px;
+}
+
+.footer__container {
+  padding: 30px 0 0 0;
+  position: relative;
+}
+
+.footer__container:after, .footer__container:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #e2e2e2;
+  bottom: 0;
+  left: 0;
+  transition: all 0.5s;
+}
+
+.footer__container::after {
+  background-color: #8E8DBE;
+  transform: scaleX(0);
+}
+
+.is-active::after {
+  transform: scaleX(1);
+}
+
+.is-active .footer__label {
+  color: #8E8DBE;
+}
+
+.is-completed .footer__label {
+  font-size: 12px;
+  transform: translateY(0);
+}
+.footer--send-icon{
+  @include respond-to(iphone6) { margin-left:290px;width:100px; }
+  @include respond-to(desktop) {margin-left:90px; }
+}
+
+.data--hidden{
+  @include respond-to(iphone6) { display: none; }
 }

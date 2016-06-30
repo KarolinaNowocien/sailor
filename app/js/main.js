@@ -55,3 +55,15 @@ $(document).ready(function(){
      }
   });
 });
+
+
+
+$(".footer__input").focus(function(){
+  $(this).parent().addClass("is-active is-completed");
+});
+
+$(".footer__input").focusout(function(){
+  if($(this).val() === "")
+    $(this).parent().removeClass("is-completed");
+  $(this).parent().removeClass("is-active");
+});
