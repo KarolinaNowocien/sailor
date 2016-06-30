@@ -47,14 +47,14 @@ main{
   .about__skills--type1{
       @include span(24);
       .about__column--type1{
-        @include span(8);
+        @include span(8 of 24);
         @include pad(10px);
       }
       }
   .about__skills--type2{
       @include span(24);
       .about__column--type2{
-        @include span(12);
+        @include span(12 of 24);
         @include pad(100px);
       }
       }

@@ -1,5 +1,5 @@
-$iphone6:960px;
 $desktop:1200px;
+$iphone6:960px;
 
 $susy: (
 columns:12,
@@ -17,7 +17,7 @@ gutter-position:inside,
 
 @mixin respond-to($media) {
   @if $media ==  iphone6 {
-		@media only screen and (min-width: 701px) and (max-width: 1200px) { @content; }
+		@media only screen and (min-width: 960px) and (max-width: 1200px) { @content; }
 	}
   @else if $media == desktop {
     @media only screen and (min-width: 1200px) { @content; }

@@ -105,7 +105,7 @@ main {
 .skills__icon {
   margin-bottom: 20px;
 }
-@media only screen and (min-width: 701px) and (max-width: 1200px) {
+@media only screen and (min-width: 960px) and (max-width: 1200px) {
   .skills__icon {
     height: 150px;
   }
@@ -136,7 +136,7 @@ main {
   }
 }
 
-@media only screen and (min-width: 701px) and (max-width: 1200px) {
+@media only screen and (min-width: 960px) and (max-width: 1200px) {
   .item {
     width: 400px;
   }
@@ -280,7 +280,7 @@ main {
   left: 3vw;
   color: #f5f6fa;
 }
-@media only screen and (min-width: 701px) and (max-width: 1200px) {
+@media only screen and (min-width: 960px) and (max-width: 1200px) {
   .logo {
     font-size: 64px;
     position: fixed;
@@ -299,7 +299,7 @@ main {
   float: right;
   transition: all 350ms ease-out;
 }
-@media only screen and (min-width: 701px) and (max-width: 1200px) {
+@media only screen and (min-width: 960px) and (max-width: 1200px) {
   .navigation__wrapper {
     position: fixed;
     width: 100vw;
@@ -318,7 +318,7 @@ main {
   text-transform: capitalize;
   letter-spacing: 2px;
 }
-@media only screen and (min-width: 701px) and (max-width: 1200px) {
+@media only screen and (min-width: 960px) and (max-width: 1200px) {
   .wrapper__list {
     padding: 40vw;
   }
@@ -337,7 +337,7 @@ main {
 .wrapper__list-item:last-of-type a {
   border-radius: 20px;
 }
-@media only screen and (min-width: 701px) and (max-width: 1200px) {
+@media only screen and (min-width: 960px) and (max-width: 1200px) {
   .wrapper__list-item:last-of-type a {
     font-size: 36px;
     color: #f5a623;
@@ -368,7 +368,7 @@ main {
   float: left;
   text-transform: uppercase;
 }
-@media only screen and (min-width: 701px) and (max-width: 1200px) {
+@media only screen and (min-width: 960px) and (max-width: 1200px) {
   .wrapper__link {
     font-size: 36px;
   }
@@ -491,7 +491,7 @@ main {
   background-position: center center;
   background-repeat: no-repeat;
 }
-@media only screen and (min-width: 701px) and (max-width: 1200px) {
+@media only screen and (min-width: 960px) and (max-width: 1200px) {
   .landing-page__video {
     height: 120vh;
   }
@@ -516,7 +516,7 @@ main {
   color: #f5f6fa;
 }
 
-@media only screen and (min-width: 701px) and (max-width: 1200px) {
+@media only screen and (min-width: 960px) and (max-width: 1200px) {
   .landing-page__text--title {
     margin: 39vh 17vw;
     font-size: 100px;
@@ -532,7 +532,7 @@ main {
 .landing-page__text--subtitle {
   opacity: .8;
 }
-@media only screen and (min-width: 701px) and (max-width: 1200px) {
+@media only screen and (min-width: 960px) and (max-width: 1200px) {
   .landing-page__text--subtitle {
     margin: 48vh 8vw;
     font-size: 42px;
@@ -543,6 +543,116 @@ main {
     margin: 55vh 27vw;
     font-size: 28px;
   }
+}
+
+.social-media__list {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.social-media__list:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+@media (min-width: 1200px) {
+  .social-media__list {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .social-media__list:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
+
+.social-media--list-item {
+  box-sizing: border-box;
+  width: 8.33333%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  padding: 20px 0;
+  margin: 20px 0;
+  cursor: pointer;
+}
+@media (min-width: 960px) {
+  .social-media--list-item {
+    box-sizing: border-box;
+    width: 33.33333%;
+    float: left;
+    padding-left: 3.33333%;
+    padding-right: 3.33333%;
+  }
+}
+@media (min-width: 1200px) {
+  .social-media--list-item {
+    box-sizing: border-box;
+    width: 16.66667%;
+    float: left;
+    padding-left: 1.66667%;
+    padding-right: 1.66667%;
+  }
+}
+.social-media--list-item:hover {
+  background-color: #54a0fe;
+}
+
+.footer__data {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer__data:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+@media (min-width: 1200px) {
+  .footer__data {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .footer__data:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
+
+.data {
+  box-sizing: border-box;
+  width: 8.33333%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  padding: 20px 0;
+  margin: 20px 0;
+  cursor: pointer;
+}
+@media (min-width: 960px) {
+  .data {
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+@media (min-width: 1200px) {
+  .data {
+    box-sizing: border-box;
+    width: 25%;
+    float: left;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+  }
+}
+.data:hover {
+  background-color: #54a0fe;
 }
 
 @font-face {
@@ -560,7 +670,7 @@ main {
 .section__title {
   font-family: "Gotham-Bold";
 }
-@media only screen and (min-width: 701px) and (max-width: 1200px) {
+@media only screen and (min-width: 960px) and (max-width: 1200px) {
   .section__title {
     font-size: 90px;
   }
@@ -576,7 +686,7 @@ main {
   opacity: .5;
   padding-bottom: 20px;
 }
-@media only screen and (min-width: 701px) and (max-width: 1200px) {
+@media only screen and (min-width: 960px) and (max-width: 1200px) {
   .section__subtitle {
     font-size: 36px;
   }
@@ -594,7 +704,7 @@ main {
   width: 100%;
   line-height: 1.2;
 }
-@media only screen and (min-width: 701px) and (max-width: 1200px) {
+@media only screen and (min-width: 960px) and (max-width: 1200px) {
   .skills__title {
     font-size: 54px;
   }
@@ -611,7 +721,7 @@ main {
   line-height: 1.48;
   color: #8f8f8f;
 }
-@media only screen and (min-width: 701px) and (max-width: 1200px) {
+@media only screen and (min-width: 960px) and (max-width: 1200px) {
   .skills__description {
     font-size: 14px;
   }
@@ -627,7 +737,7 @@ main {
   padding: 20px;
   color: #f5f6fa;
 }
-@media only screen and (min-width: 701px) and (max-width: 1200px) {
+@media only screen and (min-width: 960px) and (max-width: 1200px) {
   .pricing__title {
     font-size: 90px;
   }
@@ -648,7 +758,7 @@ main {
   margin-left: auto;
   margin-right: auto;
 }
-@media only screen and (min-width: 701px) and (max-width: 1200px) {
+@media only screen and (min-width: 960px) and (max-width: 1200px) {
   .pricing__subtitle {
     font-size: 36px;
   }
@@ -692,7 +802,7 @@ main {
   margin-bottom: 20px;
   margin-top: 50px;
 }
-@media only screen and (min-width: 701px) and (max-width: 1200px) {
+@media only screen and (min-width: 960px) and (max-width: 1200px) {
   .article__title {
     font-size: 42px;
   }
@@ -721,7 +831,7 @@ main {
 .article__list {
   padding: 0;
 }
-@media only screen and (min-width: 701px) and (max-width: 1200px) {
+@media only screen and (min-width: 960px) and (max-width: 1200px) {
   .article__list {
     margin-top: 350px;
   }
@@ -756,7 +866,7 @@ main {
   margin: 0 auto;
   width: 40vh;
 }
-@media only screen and (min-width: 701px) and (max-width: 1200px) {
+@media only screen and (min-width: 960px) and (max-width: 1200px) {
   .video__controls {
     top: 130vw;
     left: 17vw;
@@ -769,7 +879,7 @@ main {
   }
 }
 
-@media only screen and (min-width: 701px) and (max-width: 1200px) {
+@media only screen and (min-width: 960px) and (max-width: 1200px) {
   .video__controls--play {
     height: 2.5vh;
     padding-right: 14px;
@@ -788,7 +898,7 @@ main {
   padding: 3vh 3.5vh;
   cursor: pointer;
 }
-@media only screen and (min-width: 701px) and (max-width: 1200px) {
+@media only screen and (min-width: 960px) and (max-width: 1200px) {
   .video__controls--button, .article__button {
     border-radius: 80px;
     font-size: 14px;
@@ -815,7 +925,7 @@ main {
   background-color: transparent;
   color: #045dcd;
 }
-@media only screen and (min-width: 701px) and (max-width: 1200px) {
+@media only screen and (min-width: 960px) and (max-width: 1200px) {
   .button--white {
     border: solid 4px #daebf9;
   }
@@ -833,7 +943,7 @@ main {
 .button--position {
   position: relative;
 }
-@media only screen and (min-width: 701px) and (max-width: 1200px) {
+@media only screen and (min-width: 960px) and (max-width: 1200px) {
   .button--position {
     top: 150px;
   }
@@ -853,7 +963,7 @@ main {
   background-color: transparent;
   border: none;
 }
-@media only screen and (min-width: 701px) and (max-width: 1200px) {
+@media only screen and (min-width: 960px) and (max-width: 1200px) {
   .landing-page__button--scroll {
     height: 60px;
     left: 45vw;

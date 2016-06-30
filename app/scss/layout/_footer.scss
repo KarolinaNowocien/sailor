@@ -1,0 +1,73 @@
+
+$susy-3: (
+  columns: 3,
+);
+$susy-6: (
+  columns: 6,
+  container: $desktop,
+
+);
+
+// Setup example grid
+.social-media__list {
+  @include container;
+  @include susy-breakpoint($desktop, $susy-6) {
+    @include container;
+  }
+}
+
+.social-media--list-item {
+  @include span(1);
+  @include susy-breakpoint($iphone6, $susy-3) {
+    @include span(1);
+  }
+  @include susy-breakpoint($desktop, $susy-6) {
+    @include span(1);
+  }
+  &:hover{
+    background-color: $blue-light;
+  }
+
+  // Basic styling
+  padding:20px 0;
+  margin: 20px 0;
+  cursor: pointer;
+
+}
+
+
+$susy-1: (
+  columns: 1,
+);
+$susy-4: (
+  columns: 4,
+  container: $desktop,
+
+);
+
+// Setup example grid
+.footer__data {
+  @include container;
+  @include susy-breakpoint($desktop, $susy-4) {
+    @include container;
+  }
+}
+
+.data {
+  @include span(1);
+  @include susy-breakpoint($iphone6, $susy-1) {
+    @include span(1);
+  }
+  @include susy-breakpoint($desktop, $susy-4) {
+    @include span(1);
+  }
+  &:hover{
+    background-color: $blue-light;
+  }
+
+  // Basic styling
+  padding:20px 0;
+  margin: 20px 0;
+  cursor: pointer;
+
+}
