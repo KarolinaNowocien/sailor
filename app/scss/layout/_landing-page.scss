@@ -35,12 +35,12 @@
 }
 
 .landing-page__title{
-  @include respond-to(iphone6) { margin: 39vh 17vw ;font-size: 100px ; }
-  @include respond-to(desktop) { margin: 39vh 31vw ;font-size: 72px ; }
+  @include respond-to(iphone6) { margin: 600px 170px ;font-size: 100px ; }
+  @include respond-to(desktop) { margin: 220px 400px ;font-size: 72px ; }
 }
 
 .landing-page__subtitle{
-  @include respond-to(iphone6) { margin: 48vh 8vw ;font-size: 42px ; }
-  @include respond-to(desktop) { margin: 55vh 27vw ;font-size: 28px ;  }
+  @include respond-to(iphone6) { margin: 750px 70px ;font-size: 42px ; }
+  @include respond-to(desktop) { margin: 300px 350px ;font-size: 28px ;  }
   opacity:.8;
 }

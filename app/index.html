@@ -39,10 +39,10 @@
 								<a class="wrapper__link" href="#careers">Careers</a>
 							</li>
 							<li class="wrapper__list-item">
-								<a class="wrapper__link" href="#">Blog</a>
+								<a class="wrapper__link" href="#blog">Blog</a>
 							</li>
 							<li class="wrapper__list-item">
-								<a class="wrapper__link" href="#">Purchase</a>
+								<a class="wrapper__link" href="#contact">Purchase</a>
 							</li>
 			      </ul>
 			      <a href="#" class="navigation__icon">
@@ -60,26 +60,26 @@
   <section id="home" class="section">
 		<h1 class="landing-page__text landing-page__title">This is Sailor.</h1>
 		<h5 class="landing-page__text landing-page__subtitle">Responsive. Retina Ready. SVG friendly</h5>
-		<div class="landing-page__color--opacity"></div>
-    <video id="video" class="landing-page__video" controls>
-			<source src="video/mp4/Sail-Away.mp4" type="video/mp4">
-			<source src="video/OGV/Sail-Away.ogv" type="video/ogv">
-			Your browser does not support HTML5 video.
-		</video>
 		<div class="video__controls" id="controls">
 			 <a class="video__controls--button button--navy" id="playpause" title="play" onclick="togglePlayPause()"><img class="video__controls--play" src="img/icons/play_icon.svg">Watch Video</a>
 		</div>
 		<div class="landing-page--button">
 			<a id="button__scrolly"><img class="landing-page__button--scroll" src="img/icons/scroll_icon.svg"></a>
 		</div>
+		<div class="landing-page__color--opacity"></div>
+    <video id="video" class="landing-page__video" controls>
+			<source src="video/mp4/Sail-Away.mp4" type="video/mp4">
+			<source src="video/OGV/Sail-Away.ogv" type="video/ogv">
+			Your browser does not support HTML5 video.
+		</video>
   </section>
 
 <main>
 	<!--section2-->
 	<section id="about" class="section">
-		<div class="section__inner--wide">
-		<h1 class="section__title section__title--black">About Sailor</h1>
-		<h5 class="section__subtitle section__subtitle--black">Sailor is designed to make your business highly effective</h5>
+		<div class="section__inner--about">
+			<h1 class="section__title section__title--black">About Sailor</h1>
+			<h5 class="section__subtitle section__subtitle--black">Sailor is designed to make your business highly effective</h5>
 		<hr class="main__divider">
 		<div class="about__skills--wide">
 			<div class="about__column about__column--wide">
@@ -116,8 +116,8 @@
 	<!--section3-->
 	<section id="team" class="section">
 		<div class="section__inner--team">
-		<h1 class="section__title section__title--black">Executive Team</h1>
-		<h5 class="section__subtitle section__subtitle--black">People are the most powerful and vaulable part of every project</h5>
+			<h1 class="section__title section__title--black">Executive Team</h1>
+			<h5 class="section__subtitle section__subtitle--black">People are the most powerful and vaulable part of every project</h5>
 		<div id="owl-demo" class="owl-carousel team__all">
 		  <div class="item">
 					<img class="team__member--image" src="img/armchair2.png" alt="Konrad Kolasa"/>
@@ -135,7 +135,7 @@
 		</div>
 	</section>
 	<!--section4-->
-	<section id="pricing" class="section blue">
+	<section id="pricing" class="section section--blue">
 		<div class="section__inner--pricing">
 			<h1 class="section__title section__title--white">Pricing</h1>
 			<h5 class="section__subtitle section__subtitle--white">We’re sure that balance of quality to price is really high</h5>
@@ -159,7 +159,7 @@
 	</section>
 	<!--section5-->
 	<section id="careers" class="section">
-		<div class="section__inner--wide">
+		<div class="section__inner--careers">
 		<hr class="main__divider">
 		<h1 class="section__title section__title--black">Join our team</h1>
 		<h5 class="section__subtitle section__subtitle--black">Interesed in work with us? Check our job list and see if you’re a match</h5>
@@ -194,25 +194,27 @@
 	</div>
 	</section>
 	<!--section6-->
-	<section id="blog" class="section grey">
+	<section id="blog" class="section section--grey">
 		<hr class="main__divider">
-		<div class="section__inner--wide">
-		<h1 class="section__title section__title--black">Behind the scenes</h1>
-		<h5 class="section__subtitle section__subtitle--black">We love to share our experience and best practices because we know the pain</h5>
+		<div class="section__inner--blog">
+			<h1 class="section__title section__title--black">Behind the scenes</h1>
+			<h5 class="section__subtitle section__subtitle--black">We love to share our experience and best practices because we know the pain</h5>
 		<div class="article__main">
 			<div class="article--left">
-			<img class="image1" src="img/picture1.jpg">
-			  <div class="article__description--left"><h3 class="article__text article__title">Drink coffee while
+				<div class="article__image--left"></div>
+			  <div class="article__description--left">
+					<h3 class="article--blog-title">Drink coffee while
 					designing mobile apps</h3>
-					<p class="article__text article__text--big">
+					<p class="article--blog-tips">
 					Simple tips & tricks, how to make
 					design workflow highly effective</p>
 				</div>
 			</div>
 			<div class="article--right">
-			<img class="image2" src="img/picture2.jpg">
-			  <div class="article__description--left"><h3 class="article__text article__title">Start from paper sketches</h3>
-					<p class="article__text article__text--big">
+			<div class="article__image--right"></div>
+			  <div class="article__description--left">
+					<h3 class="article--blog-title">Start from paper sketches</h3>
+					<p class="article--blog-tips">
 						Start thinkink of design process with pencil, paper
 						and head full of ideas</p>
 				</div>

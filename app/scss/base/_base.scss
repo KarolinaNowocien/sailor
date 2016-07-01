@@ -1,3 +1,14 @@
+$desktop:1200px;
+$iphone6:960px;
+
+$susy: (
+columns:12,
+gutter: 1/4,
+math:fluid,
+output:float,
+gutter-position:inside,
+);
+
 main{
   text-align: center;
   overflow: hidden;
@@ -6,30 +17,32 @@ main{
 .main__divider{
   z-index: 15;
   background-color: $blue-light;
-  height: 0.8vh;
-  width: 25vh;
-  margin: 8vh auto;
+  @include respond-to(iphone6) { height: 10px; width: 200px; margin: 50px auto; }
+  @include respond-to(desktop) { height:5px; width: 150px; margin: 50px auto;  }
 }
 
+//Sections /////////////////////////////
 .section{
-  display: flex;
-  justify-content:center;
   overflow: hidden;
   text-align: center;
   color:$body;
 }
 
-.blue{
+.section--blue{
   padding-top:30px;
   background-color: $blue;
 }
 
-.grey{
+.secion--grey{
   background-color: $blog-bg;
 }
 
-.section__inner--wide{
+.section__inner--about,.section__inner--careers {
   @include container(80%);
+}
+
+.section__inner--blog{
+  @include container(90%);
 }
 
 .section__inner--pricing{
@@ -41,7 +54,7 @@ main{
   @include respond-to(iphone6) { @include container(100%); }
   @include respond-to(desktop) {@include container(65%); }
 }
-
+//Section about /////////////////////////////
 .about__skills--wide{
   font-weight: 100;
 }
@@ -85,7 +98,7 @@ main{
   margin-top:50px;
   margin-bottom: 20px;
 }
-
+//Section team /////////////////////////////
 .owl-carousel {
   margin: 0;
   padding: 0;
@@ -99,14 +112,14 @@ main{
 .team__member--image{
   display: inline-block;
   vertical-align: top;
-  @include respond-to(desktop) { padding:60px; }
+  @include respond-to(desktop) { padding:20px; }
 }
 
 .item{
   @include respond-to(iphone6) { width: 400px; }
-  @include respond-to(desktop) { width: 400px; }
+  @include respond-to(desktop) { width: 300px; }
 }
-
+//Section pricing /////////////////////////////
 .pricing__bg{
   background-color: $blue-pricing;
   height: 200px;
@@ -150,6 +163,7 @@ main{
       }
   };
 
+//Section careers /////////////////////////////
 @include susy-breakpoint ($desktop, 24) {
 .section__main {
   @include span(12);
@@ -165,23 +179,42 @@ main{
   margin-left:50px;
 }
 
+//Section blog /////////////////////////////
 @include susy-breakpoint ($desktop, 24) {
 .article--left {
   @include span(14);
-
-  background-color: $white;
+  height: 500px;
+  background-color: white;
 }
 .article--right{
   @include span(10) ;
-
-  background-color: $white;
+  height: 500px;
+  background-color: white;
 }
 }
 
-.image1{
-  width:100%;
+.article__image--left{
+  background-image: url('../img/picture1.jpg');
+  width: 350px;
+  height: 400px;
+  background-position: left;
+  background-size: cover;
 }
 
-.image2{
-  width:100%;
+.article__image--right{
+  background-image: url('../img/picture2.jpg');
+  width: 470px;
+  height: 220px;
+  background-position: center;
+  background-size: cover;
+}
+
+.article__description--left{
+  float:left;
+  background-color: white;
+}
+
+.article__description--right{
+  float:left;
+  background-color: white;
 }

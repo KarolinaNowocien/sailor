@@ -153,3 +153,16 @@ src: url('../fonts/Gotham-Black.otf') format('opentype');
   @include respond-to(iphone6) {text-align: left; }
   @include respond-to(desktop) {text-align: left;}
 }
+
+//Section blog /////////////////////////////
+.article--blog-title{
+  text-align: left;
+  font-family: "Gotham-Book";
+  font-weight: 800;
+
+}
+
+.article--blog-tips{
+  font-family: "Gotham-Book";
+  text-align: left;
+}

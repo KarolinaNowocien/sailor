@@ -1,3 +1,5 @@
+
+///// menu icon animated ///////////////////
 $(document).ready(function(){
   $(".navigation__icon-elements").click(function(){
     $("#icon-element-1").toggleClass("act");
@@ -6,7 +8,7 @@ $(document).ready(function(){
   });
 });
 
-
+///// drop down menu ///////////////////
 $(document).ready(function(){
   $(".navigation__icon").on("click", function(e){
     e.preventDefault();
@@ -14,10 +16,11 @@ $(document).ready(function(){
   });
 });
 
+///// default contronls disabled ///////////////////
    var video = document.getElementById("video");
    video.controls = false;
 
-
+///// play/pause video  ///////////////////
    function togglePlayPause() {
    var playpause = document.getElementById("playpause");
    if (video.paused || video.ended) {
@@ -32,16 +35,14 @@ $(document).ready(function(){
    }
 }
 
-
+///// scrolly button  ///////////////////
 $("#button__scrolly").click(function() {
     $('html, body').animate({
         scrollTop: $("#about").offset().top
     }, 1000, 'swing');
 });
 
-
-///////
-
+///// carousel  ///////////////////
 $(document).ready(function(){
   $(".owl-carousel").owlCarousel({
     center: true,
@@ -56,8 +57,7 @@ $(document).ready(function(){
   });
 });
 
-
-
+///// footer - email input  ///////////////////
 $(".footer__input").focus(function(){
   $(this).parent().addClass("is-active is-completed");
 });
