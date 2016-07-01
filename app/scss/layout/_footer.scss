@@ -1,14 +1,11 @@
-
 $susy-3: (
   columns: 3,
 );
 $susy-6: (
   columns: 6,
   container: $desktop,
-
 );
 
-// Setup example grid
 .social-media__list {
   margin-top:40px;
   margin-bottom: 100px;
@@ -26,17 +23,16 @@ $susy-6: (
   @include susy-breakpoint($desktop, $susy-6) {
     @include span(1);
   }
-  &:hover{
-    background-color: $blue-light;
-  }
-
-  // Basic styling
   margin: 20px 0;
   cursor: pointer;
 }
 
 .social-media__icon {
-  @include respond-to(iphone6) { width:80px;}
+  @include respond-to(iphone6) { width:90px;padding:15px;}
+  @include respond-to(desktop) { padding:30px;}
+  &:hover{
+    background-color: $blue-light;
+  }
 }
 
 $susy-1: (
@@ -64,8 +60,6 @@ $susy-4: (
   @include susy-breakpoint($desktop, $susy-4) {
     @include span(1);
   }
-
-  // Basic styling
   padding:20px 0;
   margin: 20px 0;
 
@@ -115,7 +109,7 @@ $susy-4: (
   @include respond-to(iphone6) { font-size: 48px;transform: translateY(70px); }
   @include respond-to(desktop) { font-size: 16px;transform: translateY(25px); }
   display: block;
-  color: #e2e2e2;
+  color: $grey-light;
   transition: all 0.5s;
   text-align: left;
 }
@@ -154,6 +148,7 @@ $susy-4: (
   transform: scaleX(0);
 }
 
+// classes for animated input////////////////////////////
 .is-active::after {
   transform: scaleX(1);
 }

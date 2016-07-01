@@ -15,6 +15,18 @@ gutter-position:inside,
 	border-radius:$radius;
 };
 
+@mixin gradient($from, $to) {
+  background: $from;
+	background: -moz-linear-gradient(top,  $to 0%, $from 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$to), color-stop(100%,$from));
+	background: -webkit-linear-gradient(top,  $to 0%, $from 100%);
+	background: -o-linear-gradient(top,  $to 0%, $from 100%);
+	background: -ms-linear-gradient(top,  $to 0%, $from 100%);
+	background: linear-gradient(to bottom,  $to 0%, $from 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$to', endColorstr='$from',GradientType=0 );
+}
+
+
 @mixin respond-to($media) {
   @if $media ==  iphone6 {
 		@media only screen and (min-width: 960px) and (max-width: 1200px) { @content; }

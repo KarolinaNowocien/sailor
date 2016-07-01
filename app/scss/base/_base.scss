@@ -12,12 +12,15 @@ main{
 }
 
 .section{
+  display: flex;
+  justify-content:center;
+  overflow: hidden;
   text-align: center;
   color:$body;
 }
 
 .blue{
-  color:$white;
+  padding-top:30px;
   background-color: $blue;
 }
 
@@ -25,15 +28,25 @@ main{
   background-color: $blog-bg;
 }
 
-.section__inner{
+.section__inner--wide{
   @include container(80%);
 }
 
-.about__skills--type1{
+.section__inner--pricing{
+  @include respond-to(iphone6) { @include container(90%); }
+  @include respond-to(desktop) {@include container(65%); }
+}
+
+.section__inner--team{
+  @include respond-to(iphone6) { @include container(100%); }
+  @include respond-to(desktop) {@include container(65%); }
+}
+
+.about__skills--wide{
   font-weight: 100;
 }
 
-.about__skills--type2{
+.about__skills--narrow{
   font-weight: 100;
 }
 
@@ -44,18 +57,24 @@ main{
 
 @include breakpoint ($desktop){
   @include layout(24);
-  .about__skills--type1{
+  .about__skills--wide{
       @include span(24);
-      .about__column--type1{
+      .about__column--wide{
         @include span(8 of 24);
         @include pad(10px);
       }
       }
-  .about__skills--type2{
+  .about__skills--narrow{
       @include span(24);
-      .about__column--type2{
+      .about__column--narrow{
         @include span(12 of 24);
-        @include pad(100px);
+        @include pad(200px);
+      }
+      .about__column--left{
+        @include suffix(30px);
+      }
+      .about__column--right{
+        @include prefix(30px);
       }
       }
   };
@@ -63,6 +82,7 @@ main{
 .skills__icon{
   @include respond-to(iphone6) { height:150px; }
   @include respond-to(desktop) {height:70px; }
+  margin-top:50px;
   margin-bottom: 20px;
 }
 
@@ -96,45 +116,35 @@ main{
   z-index: 7;
 }
 .pricing__wrapper {
-}
-
-.pricing__column{
-  padding-left: 0;
-  padding-right: 0;
+  background-color: $white;
 }
 
 .wrapper__inner {
   position: relative;
   z-index: 10;
-  display: inline-block;
-  background-color: white;
-  height: 450px;
-  width: 400px;
+  background-color: transparent;;
+  @include respond-to(iphone6) { padding:100px 0; margin: 0 80px; }
+  @include respond-to(desktop) { margin:40px 0; }
+}
+
+.pricing__inner--right{
+  @include respond-to(iphone6) { border-top: 2px solid $grey-light;}
+  @include respond-to(desktop) { border-left: 1px solid $grey-light;}
 }
 
 .wrapper__divider--horizontal{
   z-index: 15;
-  background-color: $body;
+  background-color: $grey-light;
   height: 0.05vh;
-  opacity: .5;
   width: 10vw;
   margin: 2vh auto;
-}
-
-.wrapper__divider--vertical{
-  z-index: 15;
-  background-color: $body;
-  height: 40vh;
-  opacity: .5;
-  width: 0.05vw;
-  margin: 0 0;
 }
 
 @include breakpoint ($desktop){
   @include layout(12);
   .pricing__wrapper{
       @include span(12);
-      .pricing__column{
+      .wrapper__inner{
         @include span(6 at 12 );
       }
       }

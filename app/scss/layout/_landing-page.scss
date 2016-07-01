@@ -1,30 +1,19 @@
-.landing-page{
-  text-align:center;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-}
-
 .landing-page__color--opacity {
   top:0;
   left:0;
   right: 0;
-  height:100vh;
-  width: 100%;
+  @include respond-to(iphone6) { height:100vh; }
+  @include respond-to(desktop) {height:56vw; }
   position: absolute;
   z-index: 3;
-  background-color: #000365;
-  background-image: -webkit-linear-gradient(#000365, #006ffc);
-  background-image: -o-linear-gradient(#000365, #006ffc);
-  background-image: -moz-linear-gradient(#000365, #006ffc);
-  background-image: linear-gradient(#000365, #006ffc);
+  @include gradient($gradient-top, $gradient-bottom);
   opacity: 0.6;
 }
 
 .landing-page__video {
   top:0;
-  @include respond-to(iphone6) { height:120vh; }
-  @include respond-to(desktop) {height:60vw; }
+  @include respond-to(iphone6) { height:100vh; }
+  @include respond-to(desktop) {height:56vw; }
   z-index: 0;
   position: relative;
   background-position: center center;
@@ -45,12 +34,12 @@
   color: $white;
 }
 
-.landing-page__text--title{
+.landing-page__title{
   @include respond-to(iphone6) { margin: 39vh 17vw ;font-size: 100px ; }
   @include respond-to(desktop) { margin: 39vh 31vw ;font-size: 72px ; }
 }
 
-.landing-page__text--subtitle{
+.landing-page__subtitle{
   @include respond-to(iphone6) { margin: 48vh 8vw ;font-size: 42px ; }
   @include respond-to(desktop) { margin: 55vh 27vw ;font-size: 28px ;  }
   opacity:.8;

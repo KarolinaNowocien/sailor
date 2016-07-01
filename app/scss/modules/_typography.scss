@@ -13,24 +13,43 @@ font-family: "Gotham-Black";
 src: url('../fonts/Gotham-Black.otf') format('opentype');
 };
 
-
+//Sections- titles and subtitles/////////////////////////////
 .section__title{
   font-family: "Gotham-Bold";
   @include respond-to(iphone6) { font-size: 90px ; }
   @include respond-to(desktop) { font-size: 64px ; }
 }
 
-.section__subtitle {
-  @include respond-to(iphone6) { font-size: 36px ;  }
-  @include respond-to(desktop) { font-size: 24px ;  }
-  font-family: "Gotham-Book";
-  opacity:.5;
-  padding-bottom: 20px;
+.section__title--black{
+  color:$body;
 }
 
+.section__title--white{
+  color:$white;
+}
+
+.section__subtitle{
+  font-family: "Gotham-Book";
+  @include respond-to(iphone6) { font-size: 36px ; }
+  @include respond-to(desktop) { font-size: 24px ; }
+  opacity:.5;
+  padding-bottom: 20px;
+  font-weight:100;
+}
+
+.section__subtitle--black {
+  color:$body;
+}
+
+.section__subtitle--white {
+  color:$white;
+}
+
+//Section about- content /////////////////////////////
+
 .skills__title{
-  @include respond-to(iphone6) {font-size: 54px; }
-  @include respond-to(desktop) {font-size: 34px; }
+  @include respond-to(iphone6) {font-size: 64px; }
+  @include respond-to(desktop) {font-size: 32px; }
   font-family: "Gotham-Book";
   font-weight: 100;
   color:$body;
@@ -40,58 +59,49 @@ src: url('../fonts/Gotham-Black.otf') format('opentype');
 
 .skills__description{
   @include respond-to(iphone6) {font-size: 14px; }
-  @include respond-to(desktop) {font-size: 16px; }
+  @include respond-to(desktop) {font-size: 14px; }
   font-family: "Gotham-Book";
   margin: 10px;
   line-height: 1.48;
   color: $description;
 }
 
-.pricing__title{
-  @include respond-to(iphone6) { font-size: 90px ; }
-  @include respond-to(desktop) { font-size: 64px ; }
-  font-family: "Gotham-Book";
-  padding: 20px;
-  color: $white;
-}
-
-.pricing__subtitle{
-  @include respond-to(iphone6) { font-size: 36px ;  }
-  @include respond-to(desktop) { font-size: 24px ;  }
-  font-family: "Gotham-Book";
-  padding-bottom: 20px;
-  font-weight: 100;
-  opacity:.8;
-  color: $white;
-  @include container(80%);
-}
-
+//Section pricing- content /////////////////////////////
 .wrapper__text  {
-  margin-top: 50px;
+  @include respond-to(iphone6) { margin-top: 80px; }
+  @include respond-to(desktop) { margin-top: 40px; }
   font-family: "Gotham-Book";
   color: $body;
 
 }
-.wrapper__text--header {
+.wrapper__header {
+  @include respond-to(iphone6) { font-size: 48px; }
+  @include respond-to(desktop) { font-size: 22px;  }
   text-transform: uppercase;
-}
-
-.wrapper__text--subtitle {
-  padding: 0 75px;
-  text-transform: capitalize;
-  margin-bottom: 50px;
-  font-size: 16px;
-}
-
-.wrapper__text--price{
-  color: $blue;
-  font-size: 40px;
   font-weight: 100;
 }
 
+.wrapper__subtitle {
+  @include respond-to(iphone6) { padding: 0; }
+  @include respond-to(desktop) { padding: 0 75px;  }
+  text-transform: capitalize;
+  margin-bottom: 40px;
+  @include respond-to(iphone6) { font-size: 28px; }
+  @include respond-to(desktop) { font-size: 16px;  }
+  opacity: 0.5;
+}
+
+.wrapper__price{
+  color: $blue;
+  @include respond-to(iphone6) { font-size: 64px;  }
+  @include respond-to(desktop) { font-size: 40px;  }
+  font-weight: 100;
+}
+
+//Section join-us- content /////////////////////////////
 .article__title{
-  @include respond-to(iphone6) {font-size: 42px; }
-  @include respond-to(desktop) {font-size: 28px; }
+  @include respond-to(iphone6) {font-size: 42px; text-align: center;}
+  @include respond-to(desktop) {font-size: 28px; text-align: left; }
   text-transform:capitalize;
   margin-bottom:20px;
   margin-top: 50px;
@@ -103,13 +113,14 @@ src: url('../fonts/Gotham-Black.otf') format('opentype');
   color:$body;
   width: 100%;
   line-height: 1.2;
-  text-align: left;
 }
 
 .article__text--big{
   font-size: 20px;
   opacity: 0.5;
   padding-bottom: 30px;
+  @include respond-to(iphone6) {text-align: center; }
+  @include respond-to(desktop) {text-align: left;}
 }
 
 .article__list{
@@ -124,6 +135,8 @@ src: url('../fonts/Gotham-Black.otf') format('opentype');
 }
 
 .item__title{
+  @include respond-to(iphone6) {text-align: left; }
+  @include respond-to(desktop) {text-align: left;}
   margin-bottom:30px;
   font-size: 20px;
   text-transform: uppercase;
@@ -137,4 +150,6 @@ src: url('../fonts/Gotham-Black.otf') format('opentype');
 .item__description{
   opacity: 0.5;
   font-size: 14px;
+  @include respond-to(iphone6) {text-align: left; }
+  @include respond-to(desktop) {text-align: left;}
 }
